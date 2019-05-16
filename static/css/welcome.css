@@ -1,3 +1,21 @@
+#welcome-heading{
+}
+
 h1{
+  padding: 2vw;
   style: italic;
+}
+
+#subtitle-heading{
+  font-size: 18pt;
+  margin-left: 2vw;
+}
+
+#laptop_image{
+  height: 25vw;
+  border: 6px solid #545454;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
