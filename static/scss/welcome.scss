@@ -32,10 +32,23 @@
   position: relative;
 }
 
-#menu-total:active{
-  .menu-item{
-    top: 0;
+#menu-total:hover{
+  #menu-projects{
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 1.5vw;
     left: 0;
+  }
+  #menu-about{
+    top: 0;
+    transform: translate(-50%, -150%);
+  }
+  #menu-contact{
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 1.5vw;
+    right: 0;
+    left: auto;
   }
 }
 
@@ -43,26 +56,14 @@
   width: 25vw;
   height: 25vw;
   position: absolute;
+  z-index: 2;
 }
 
 .menu-item{
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-// #menu-about{
-//   transform: rotate(-90deg);
-// }
-
-// .scrolling-wrapper {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   overflow-x: auto;
-
-//   .card {
-//     flex: 0 0 auto;
-//     width: 100%;
-//   }
-// }

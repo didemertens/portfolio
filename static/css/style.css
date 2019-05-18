@@ -32,22 +32,37 @@
   position: relative;
 }
 
-#menu-total:active .menu-item {
-  top: 0;
+#menu-total:hover #menu-projects {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  top: 1.5vw;
   left: 0;
+}
+#menu-total:hover #menu-about {
+  top: 0;
+  transform: translate(-50%, -150%);
+}
+#menu-total:hover #menu-contact {
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 1.5vw;
+  right: 0;
+  left: auto;
 }
 
 #laptop_image {
   width: 25vw;
   height: 25vw;
   position: absolute;
+  z-index: 2;
 }
 
 .menu-item {
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 body {
