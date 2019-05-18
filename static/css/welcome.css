@@ -1,39 +1,53 @@
-#welcome-heading{
+#welcome-heading {
+  border: 6px solid #545454;
+  background-color: white;
 }
 
-#title-heading{
+#title-heading {
   padding: 2vw;
   style: italic;
 }
 
-#subtitle-heading{
+#subtitle-heading {
   font-size: 18pt;
   margin-top: -3vw;
   margin-left: 2vw;
   font-size: 30pt;
 }
 
-.letter-heading:hover{
+.letter-heading:hover {
   text-transform: uppercase;
 }
 
-#laptop_image{
+#menu-total {
+  width: 25vw;
   height: 25vw;
   border: 6px solid #545454;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -1vw;
+  margin-bottom: -14vw;
+  position: relative;
 }
 
-
-.scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+#menu-total:active .menu-item {
+  top: 0;
+  left: 0;
 }
 
-.card {
-    flex: 0 0 auto;
-    width: 100%;
+#laptop_image {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
 }
+
+.menu-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=welcome.css.map */
