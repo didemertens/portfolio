@@ -25,3 +25,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 100%;
+}
