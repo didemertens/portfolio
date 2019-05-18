@@ -32,13 +32,14 @@ $grey-border: #545454;
   margin-top: -1vw;
   margin-bottom: -14vw;
   position: relative;
+  font-family: 'Anton', sans-serif;
 }
 
 #laptop_image{
   width: 25vw;
   height: 25vw;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu-item{
@@ -56,12 +57,14 @@ $grey-border: #545454;
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 0;
   }
   100% {
     transform: rotate(-45deg);
     transform-origin: center;
     top: 1.5vw;
     left: 0;
+    z-index: 0;
   }
 }
 
@@ -71,6 +74,11 @@ $grey-border: #545454;
   transform-origin: center;
   top: 1.5vw;
   left: 0;
+  z-index: 2;
+  &:hover {
+    left: -0.5vw;
+    border-bottom: 2px solid $grey-border;
+  }
 }
 
 @keyframes showAbout{
@@ -91,6 +99,10 @@ $grey-border: #545454;
   animation: 1s showAbout;
   top: 0;
   transform: translate(-50%, -150%);
+  &:hover {
+    top: -0.5vw;
+    border-bottom: 2px solid $grey-border;
+  }
 }
 
 @keyframes showContact{
@@ -100,6 +112,7 @@ $grey-border: #545454;
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 0;
   }
   100% {
     transform: rotate(45deg);
@@ -107,6 +120,7 @@ $grey-border: #545454;
     top: 1.5vw;
     right: 0;
     left: auto;
+    z-index: 0;
   }
 }
 
@@ -117,17 +131,10 @@ $grey-border: #545454;
   top: 1.5vw;
   right: 0;
   left: auto;
+  z-index: 2;
+  &:hover {
+    right: -0.5vw;
+    border-bottom: 2px solid $grey-border;
+  }
 }
 
-
-// #menu-about{
-//       top: 0;
-//       transform: translate(-50%, -150%);
-//     }
-//     #menu-contact{
-//       transform: rotate(45deg);
-//       transform-origin: center;
-//       top: 1.5vw;
-//       right: 0;
-//       left: auto;
-//     }

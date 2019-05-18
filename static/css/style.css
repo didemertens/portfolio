@@ -30,13 +30,14 @@
   margin-top: -1vw;
   margin-bottom: -14vw;
   position: relative;
+  font-family: "Anton", sans-serif;
 }
 
 #laptop_image {
   width: 25vw;
   height: 25vw;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu-item {
@@ -54,12 +55,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 0;
   }
   100% {
     transform: rotate(-45deg);
     transform-origin: center;
     top: 1.5vw;
     left: 0;
+    z-index: 0;
   }
 }
 #menu-projects {
@@ -68,6 +71,11 @@
   transform-origin: center;
   top: 1.5vw;
   left: 0;
+  z-index: 2;
+}
+#menu-projects:hover {
+  left: -0.5vw;
+  border-bottom: 2px solid #545454;
 }
 
 @keyframes showAbout {
@@ -88,6 +96,10 @@
   top: 0;
   transform: translate(-50%, -150%);
 }
+#menu-about:hover {
+  top: -0.5vw;
+  border-bottom: 2px solid #545454;
+}
 
 @keyframes showContact {
   0% {
@@ -96,6 +108,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 0;
   }
   100% {
     transform: rotate(45deg);
@@ -103,6 +116,7 @@
     top: 1.5vw;
     right: 0;
     left: auto;
+    z-index: 0;
   }
 }
 #menu-contact {
@@ -112,6 +126,11 @@
   top: 1.5vw;
   right: 0;
   left: auto;
+  z-index: 2;
+}
+#menu-contact:hover {
+  right: -0.5vw;
+  border-bottom: 2px solid #545454;
 }
 
 body {
