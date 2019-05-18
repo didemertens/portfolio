@@ -14,15 +14,39 @@
   <div id="menu-total">
     <img id="laptop_image" src="{% static "media/dide_laptop.png" %}"
     alt="laptop image">
-    <h3 class="menu-item" id="menu-projects">PROJECTS</h3>
-    <h3 class="menu-item" id="menu-about">ABOUT</h3>
-    <h3 class="menu-item" id="menu-contact">CONTACT </h3>
+    <h3 class="menu-item" id="menu-projects" onclick="jump('projects-middle')">PROJECTS</h3>
+    <h3 class="menu-item" id="menu-about" onclick="jump('about-middle')">ABOUT</h3>
+    <h3 class="menu-item" id="menu-contact" onclick="jump('contact-bottom')">CONTACT </h3>
   </div>
 </div>
 
-{% endblock body %}
+<div id="about-middle">
+  <h1>About me</h1>
+  <p>I'm a full-stack web developer.</p>
+  <h3>SKILLS</h3>
+  <ul>
+    <li>Python</li>
+    <li>Django</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+</div>
 
-{# <div class="scrolling-wrapper">
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-</div> #}
+<div id="projects-middle">
+  <h1>My projects</h1>
+  <ul>
+    <li>Project 1</li>
+    <li>Project 2</li>
+    <li>Project 3</li>
+  </ul>
+</div>
+
+<div id="contact-bottom">
+  <h1 id="title-contact">Contact me</h1>
+</div>
+
+<script src="static/js/jump.js">
+</script>
+
+{% endblock body %}

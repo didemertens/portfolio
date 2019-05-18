@@ -1,3 +1,8 @@
+body {
+  padding: 1vw;
+  background-color: #E5F2E2;
+}
+
 #welcome-heading {
   border: 6px solid #545454;
   background-color: white;
@@ -5,7 +10,7 @@
 
 #title-heading {
   padding: 2vw;
-  style: italic;
+  font-size: 40pt;
 }
 
 #subtitle-heading {
@@ -133,9 +138,28 @@
   border-bottom: 2px solid #545454;
 }
 
-body {
-  padding: 1vw;
-  background-color: #E5F2E2;
+#about-middle {
+  margin-top: 5vw;
+  border: 6px solid #545454;
+  background-color: white;
+  height: 400px;
+  padding: 20px;
+}
+
+#projects-middle {
+  margin-top: 5vw;
+  border: 6px solid #545454;
+  background-color: white;
+  height: 400px;
+  padding: 20px;
+}
+
+#contact-bottom {
+  margin-top: 5vw;
+  border: 6px solid #545454;
+  background-color: white;
+  height: 400px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
