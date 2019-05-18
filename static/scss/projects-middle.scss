@@ -1,7 +1,12 @@
+#projects{
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
 #projects-middle{
-  margin-top: 5vw;
   border: 6px solid $grey-border;
-  background-color: white;
-  height: 400px;
+  box-shadow: 5px 5px $border-shadow;
+  background-color: $orange-back;
+  height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
 }

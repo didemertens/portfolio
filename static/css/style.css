@@ -1,11 +1,13 @@
 body {
   padding: 1vw;
-  background-color: #E5F2E2;
+  background: linear-gradient(to bottom, #FFDDDF 0%, #FF5961 100%);
 }
 
 #welcome-heading {
-  border: 6px solid #545454;
+  border: 6px solid #75846F;
   background-color: white;
+  box-shadow: 5px 5px #485144;
+  border-radius: 10px;
 }
 
 #title-heading {
@@ -27,7 +29,7 @@ body {
 #menu-total {
   width: 25vw;
   height: 25vw;
-  border: 6px solid #545454;
+  border: 6px solid #485144;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -80,7 +82,7 @@ body {
 }
 #menu-projects:hover {
   left: -0.5vw;
-  border-bottom: 2px solid #545454;
+  border-bottom: 2px solid #75846F;
 }
 
 @keyframes showAbout {
@@ -103,7 +105,7 @@ body {
 }
 #menu-about:hover {
   top: -0.5vw;
-  border-bottom: 2px solid #545454;
+  border-bottom: 2px solid #75846F;
 }
 
 @keyframes showContact {
@@ -135,30 +137,45 @@ body {
 }
 #menu-contact:hover {
   right: -0.5vw;
-  border-bottom: 2px solid #545454;
+  border-bottom: 2px solid #75846F;
+}
+
+#about {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
 
 #about-middle {
-  margin-top: 5vw;
-  border: 6px solid #545454;
+  border: 6px solid #75846F;
+  box-shadow: 5px 5px #485144;
   background-color: white;
-  height: 400px;
+  height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
+}
+
+#projects {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
 
 #projects-middle {
-  margin-top: 5vw;
-  border: 6px solid #545454;
+  border: 6px solid #75846F;
+  box-shadow: 5px 5px #485144;
   background-color: white;
-  height: 400px;
+  height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
 }
 
+#contact {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
 #contact-bottom {
-  margin-top: 5vw;
-  border: 6px solid #545454;
+  border: 6px solid #75846F;
+  box-shadow: 5px 5px #485144;
   background-color: white;
-  height: 400px;
+  height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
 }
 

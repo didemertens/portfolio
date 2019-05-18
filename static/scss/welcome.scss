@@ -1,6 +1,8 @@
 #welcome-heading{
   border: 6px solid $grey-border;
-  background-color: white;
+  background-color: $orange-back;
+  box-shadow: 5px 5px $border-shadow;
+  border-radius: 10px;
 }
 
 #title-heading{
@@ -22,7 +24,7 @@
 #menu-total{
   width: 25vw;
   height: 25vw;
-  border: 6px solid $grey-border;
+  border: 6px solid $border-shadow;
   border-radius: 50%;
   display: block;
   margin-left: auto;
