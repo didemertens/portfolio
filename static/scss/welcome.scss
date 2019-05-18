@@ -1,5 +1,7 @@
+$grey-border: #545454;
+
 #welcome-heading{
-  border: 6px solid #545454;
+  border: 6px solid $grey-border;
   background-color: white;
 }
 
@@ -22,7 +24,7 @@
 #menu-total{
   width: 25vw;
   height: 25vw;
-  border: 6px solid #545454;
+  border: 6px solid $grey-border;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -30,26 +32,6 @@
   margin-top: -1vw;
   margin-bottom: -14vw;
   position: relative;
-}
-
-#menu-total:hover{
-  #menu-projects{
-    transform: rotate(-45deg);
-    transform-origin: center;
-    top: 1.5vw;
-    left: 0;
-  }
-  #menu-about{
-    top: 0;
-    transform: translate(-50%, -150%);
-  }
-  #menu-contact{
-    transform: rotate(45deg);
-    transform-origin: center;
-    top: 1.5vw;
-    right: 0;
-    left: auto;
-  }
 }
 
 #laptop_image{
@@ -67,3 +49,85 @@
   left: 50%;
 }
 
+@keyframes showProjects{
+  0%{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 1.5vw;
+    left: 0;
+  }
+}
+
+#menu-projects{
+  animation: 1s showProjects;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  top: 1.5vw;
+  left: 0;
+}
+
+@keyframes showAbout{
+  0%{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    transform: translate(-50%, -150%);
+  }
+}
+
+#menu-about{
+  animation: 1s showAbout;
+  top: 0;
+  transform: translate(-50%, -150%);
+}
+
+@keyframes showContact{
+  0%{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 1.5vw;
+    right: 0;
+    left: auto;
+  }
+}
+
+#menu-contact{
+  animation: 1s showContact;
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 1.5vw;
+  right: 0;
+  left: auto;
+}
+
+
+// #menu-about{
+//       top: 0;
+//       transform: translate(-50%, -150%);
+//     }
+//     #menu-contact{
+//       transform: rotate(45deg);
+//       transform-origin: center;
+//       top: 1.5vw;
+//       right: 0;
+//       left: auto;
+//     }
