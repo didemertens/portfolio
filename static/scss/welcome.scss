@@ -1,24 +1,33 @@
 #welcome-heading{
-  border: 6px solid $grey-border;
-  background-color: $orange-back;
-  box-shadow: 5px 5px $border-shadow;
-  border-radius: 10px;
+  background-color: #8BA886;
+  border-radius: 5px;
+  height: 55vh;
+  width: 80vw;
+  margin-left: 8vw;
+  margin-top: 18vw;
 }
 
 #title-heading{
   padding: 2vw;
   font-size: 40pt;
+  margin-left: 10vw;
+  color: white;
 }
 
 #subtitle-heading{
-  font-size: 18pt;
+  font-size: 40pt;
   margin-top: -3vw;
-  margin-left: 2vw;
+  margin-left: 56vw;
   font-size: 30pt;
+  color: white;
 }
 
-.letter-heading:hover{
-  text-transform: uppercase;
+#outside-heading{
+  font-size: 20pt;
+  margin-top: 12vw;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: white;
 }
 
 #menu-total{
@@ -29,7 +38,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -1vw;
+  margin-top: -21.5vw;
   margin-bottom: -14vw;
   position: relative;
   font-family: 'Anton', sans-serif;
