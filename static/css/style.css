@@ -3,6 +3,10 @@ body {
   background: linear-gradient(to bottom, #FFFFFA 0%, #667884 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #welcome-heading {
   background-color: #8BA886;
   border-radius: 5px;
