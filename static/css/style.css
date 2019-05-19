@@ -58,9 +58,9 @@ html #menu-total {
 html #arrow-down {
   width: 5vw;
   margin-top: 40vh;
+  margin-left: 49vw;
   font-size: 35pt;
   color: #1F1F31;
-  text-align: center;
   cursor: pointer;
 }
 html #arrow-down:hover {
@@ -191,6 +191,16 @@ html #menu-contact:hover {
   background-color: #B0C0BC;
   height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
+}
+
+#myCarousel {
+  height: 30vw;
+}
+
+#book-blog {
+  height: 70%;
+  width: 80%;
+  text-align: center;
 }
 
 #contact {
