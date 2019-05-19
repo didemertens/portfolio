@@ -193,22 +193,99 @@ html #menu-contact:hover {
   padding: 20px;
 }
 
-#myCarousel {
-  height: 40vw;
+* {
+  box-sizing: border-box;
 }
 
-#book-blog {
-  height: 70%;
-  width: 80%;
-  margin-right: auto;
-  margin-left: 6vw;
+/* Slideshow container */
+.slideshow-container {
+  height: 140%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.carousel-caption {
-  top: auto;
-  bottom: -5vw;
+.mySlides {
+  display: none;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #808A9F;
+}
+
+/* Caption text */
+.slideshow-text {
+  border: 4px solid #1F1F31;
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #1F1F31;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #808A9F;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #contact {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;

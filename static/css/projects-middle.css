@@ -1,12 +1,17 @@
-#projects {
-  padding-top: 2.5vw;
-  padding-bottom: 2.5vw;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 55 |   background-color: $border-blue;
+ *    |                     ^^^^^^^^^^^^
+ *    '
+ *   static/scss/projects-middle.scss 55:21  root stylesheet */
 
-#projects-middle {
-  background-color: #B0C0BC;
-  height: calc(calc(100vh - 5vw) - 52px);
-  padding: 20px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 55 \2502    background-color: $border-blue;\a    \2502                      ^^^^^^^^^^^^\a    \2575 \a   static/scss/projects-middle.scss 55:21  root stylesheet";
 }
-
-/*# sourceMappingURL=projects-middle.css.map */
