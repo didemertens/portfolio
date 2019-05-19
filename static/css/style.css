@@ -194,13 +194,19 @@ html #menu-contact:hover {
 }
 
 #myCarousel {
-  height: 30vw;
+  height: 40vw;
 }
 
 #book-blog {
   height: 70%;
   width: 80%;
-  text-align: center;
+  margin-right: auto;
+  margin-left: 6vw;
+}
+
+.carousel-caption {
+  top: auto;
+  bottom: -5vw;
 }
 
 #contact {
