@@ -37,11 +37,16 @@ html {
   position: relative;
 }
 
-#arrow{
+#arrow-down{
+  width: 5vw;
   margin-top: 40vh;
   font-size: 35pt;
   color: $dark-blue;
   text-align: center;
+  cursor: pointer;
+  &:hover{
+    margin-top: 38vh;
+  }
 }
 
 #laptop_image{
@@ -62,6 +67,7 @@ html {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 13pt;
   color: $white-back;
+  cursor: pointer;
 }
 
 @keyframes showProjects{

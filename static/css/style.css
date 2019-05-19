@@ -4,6 +4,22 @@ body {
   background: #F7F7F7;
 }
 
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -39,11 +55,16 @@ html #menu-total {
   margin-bottom: -14vw;
   position: relative;
 }
-html #arrow {
+html #arrow-down {
+  width: 5vw;
   margin-top: 40vh;
   font-size: 35pt;
   color: #1F1F31;
   text-align: center;
+  cursor: pointer;
+}
+html #arrow-down:hover {
+  margin-top: 38vh;
 }
 html #laptop_image {
   border-radius: 50%;
@@ -62,6 +83,7 @@ html .menu-item {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 13pt;
   color: #F7F7F7;
+  cursor: pointer;
 }
 @keyframes showProjects {
   0% {

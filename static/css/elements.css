@@ -4,4 +4,20 @@ body {
   background: #F7F7F7;
 }
 
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 /*# sourceMappingURL=elements.css.map */

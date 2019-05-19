@@ -9,3 +9,18 @@ body{
   background: $white-back;
 }
 
+#myBtn{
+  font-size: 20pt;
+  color: $dark-blue;
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}

@@ -3,6 +3,10 @@
 
 {% block body %}
 
+<a onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
 <div id="welcome-heading">
   <h1 id="title-heading">Dide Mertens</h1>
   <h3 id="subtitle-heading">Full-stack web developer</h3>
@@ -13,8 +17,8 @@
     <h3 class="menu-item" id="menu-about" onclick="jump('about')">ABOUT</h3>
     <h3 class="menu-item" id="menu-contact" onclick="jump('contact')">CONTACT </h3>
   </div>
-  <div id="arrow">
-    <i class="fas fa-arrow-down"></i>
+  <div id="arrow-down">
+    <i class="fas fa-arrow-down" onclick="jump('about')"></i>
   </div>
 </div>
 
@@ -54,7 +58,7 @@
   <h4>end</h4>
 </div>
 
-<script src="static/js/jump.js">
-</script>
+<script src="static/js/jump.js"></script>
+<script src="static/js/scroll-top.js"></script>
 
 {% endblock body %}
