@@ -1,6 +1,7 @@
 body {
-  padding: 1vw;
-  background: linear-gradient(to bottom, #FFFFFA 0%, #667884 100%);
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
 
 /*# sourceMappingURL=elements.css.map */

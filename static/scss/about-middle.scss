@@ -1,12 +1,13 @@
 #about{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
+  margin: 25vw 15vw;
 }
 
 #about-middle{
-  border: 6px solid $grey-border;
-  box-shadow: 5px 5px $border-shadow;
-  background-color: $orange-back;
+  border-top: 12px solid $border-blue;
+  border-bottom: 12px solid $border-blue;
+  background-color: $white-back;
   height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
 }

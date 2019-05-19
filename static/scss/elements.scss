@@ -1,10 +1,11 @@
 $grey-border: #75846F;
-$orange-back: white;
-$border-shadow: #485144;
+$white-back: #F7F7F7;
+$dark-blue: #1F1F31;
+$border-blue: #808A9F;
 
 body{
-  padding: 1vw;
-  background: linear-gradient(to bottom, #FFFFFA 0%, #667884 100%);
+  padding: 0;
+  margin: 0;
+  background: $white-back;
 }
-
 

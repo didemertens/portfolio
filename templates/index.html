@@ -4,18 +4,18 @@
 {% block body %}
 
 <div id="welcome-heading">
-  <h1 id="title-heading">Dide</h1>
+  <h1 id="title-heading">Dide Mertens</h1>
+  <h3 id="subtitle-heading">Full-stack web developer</h3>
   <div id="menu-total">
-    <img id="laptop_image" src="{% static "media/dide_laptop.png" %}"
+    <img id="laptop_image" src="{% static "media/prof-pic.png" %}"
     alt="laptop image">
     <h3 class="menu-item" id="menu-projects" onclick="jump('projects')">PROJECTS</h3>
     <h3 class="menu-item" id="menu-about" onclick="jump('about')">ABOUT</h3>
     <h3 class="menu-item" id="menu-contact" onclick="jump('contact')">CONTACT </h3>
   </div>
-  <h1 id="subtitle-heading">Mertens</h1>
-  <div id="outside-heading">
-    <h1>a full-stack web developer</h1>
-</div>
+  <div id="arrow">
+    <i class="fas fa-arrow-down"></i>
+  </div>
 </div>
 
 <div id="about">
@@ -48,6 +48,10 @@
   <div id="contact-bottom">
     <h1 id="title-contact">Contact me</h1>
   </div>
+</div>
+
+<div id="border-bottom">
+  <h4>end</h4>
 </div>
 
 <script src="static/js/jump.js">

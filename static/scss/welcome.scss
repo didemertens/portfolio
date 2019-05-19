@@ -1,58 +1,56 @@
 html {
   scroll-behavior: smooth;
-}
 
 #welcome-heading{
-  background-color: #8BA886;
-  border-radius: 5px;
+  background-color: $dark-blue;
   height: 55vh;
-  width: 80vw;
-  margin-left: 8vw;
-  margin-top: 18vw;
+  width: 100vw;
+  margin-top: -2.5vw;
 }
 
 #title-heading{
+  margin-top: 3vw;
   padding: 2vw;
   font-size: 40pt;
-  margin-left: 10vw;
-  color: white;
+  color: $white-back;
+  font-family: 'Bitter', serif;
 }
 
 #subtitle-heading{
-  font-size: 40pt;
-  margin-top: -3vw;
-  margin-left: 56vw;
-  font-size: 30pt;
-  color: white;
-}
-
-#outside-heading{
-  font-size: 20pt;
-  margin-top: 12vw;
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  color: white;
+  margin-top: -4.5vw;
+  padding: 2vw;
+  font-size: 18pt;
+  color: $white-back;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 #menu-total{
-  width: 25vw;
-  height: 25vw;
-  border: 6px solid $border-shadow;
+  width: 27vw;
+  height: 27vw;
+  border: 15px solid $dark-blue;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -21.5vw;
+  margin-top: 1vw;
   margin-bottom: -14vw;
   position: relative;
-  font-family: 'Anton', sans-serif;
+}
+
+#arrow{
+  margin-top: 40vh;
+  font-size: 35pt;
+  color: $dark-blue;
+  text-align: center;
 }
 
 #laptop_image{
+  border-radius: 50%;
   width: 25vw;
   height: 25vw;
   position: absolute;
   z-index: 1;
+  transform: rotate(2deg);
 }
 
 .menu-item{
@@ -61,6 +59,9 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13pt;
+  color: $white-back;
 }
 
 @keyframes showProjects{
@@ -90,7 +91,7 @@ html {
   z-index: 2;
   &:hover {
     left: -0.5vw;
-    border-bottom: 2px solid $grey-border;
+    border-bottom: 2px solid $border-blue;
   }
 }
 
@@ -114,7 +115,7 @@ html {
   transform: translate(-50%, -150%);
   &:hover {
     top: -0.5vw;
-    border-bottom: 2px solid $grey-border;
+    border-bottom: 2px solid $border-blue;
   }
 }
 
@@ -147,7 +148,6 @@ html {
   z-index: 2;
   &:hover {
     right: -0.5vw;
-    border-bottom: 2px solid $grey-border;
+    border-bottom: 2px solid $border-blue;
   }
-}
-
+}}
