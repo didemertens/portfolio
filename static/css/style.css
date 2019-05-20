@@ -193,8 +193,11 @@ html #menu-contact:hover {
 }
 
 #projects-middle {
+  background-color: #1F1F31;
   height: 34.5vw;
   padding: 20px;
+  position: relative;
+  z-index: 0;
 }
 
 #projects-title {
@@ -209,12 +212,9 @@ html #menu-contact:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  background-color: #808A9F;
-  border: 5px solid #1F1F31;
   height: 100%;
   max-width: 1000px;
   position: relative;
-  z-index: 0;
   margin: auto;
   border-bottom: none;
 }
@@ -254,16 +254,19 @@ html #menu-contact:hover {
 
 .link-slide {
   text-decoration: none;
-  color: #1F1F31;
+  line-height: 35pt;
+  padding: 0.5vw;
+  color: #F7F7F7;
   font-family: "Bitter", serif;
   cursor: pointer;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 12pt;
+  background-color: #DDA448;
 }
 .link-slide:hover {
-  border-bottom: 1px solid #1F1F31;
   text-decoration: none;
-  color: #1F1F31;
+  color: #F7F7F7;
+  background-color: #808A9F;
 }
 
 .mySlides {
