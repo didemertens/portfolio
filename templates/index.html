@@ -44,31 +44,42 @@
 {# projects middle #}
 
 <div id="projects">
+  <h1 id="projects-title">My projects</h1>
   <div id="projects-middle">
-    <h1 id="projects-title">My projects</h1>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with caption text -->
   <div class="mySlides fade">
-    <div id="book-blog">
-      <a href="https://bookblogdide.herokuapp.com/"><img class="img-slide" src="{% static "media/book-pic.png" %}" style="width:100%"></a>
+    <div class="pic-transition">
       <div class="slideshow-text"><h4>Book Blog</h4>
-      <p>Django, HTML, CSS, JavaScript</p></div>
+        <p>Django, HTML, CSS, JavaScript</p>
+        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+        Go to website</a></div>
+        <img class="img-slide" src="{% static "media/book-pic.png" %}"
+        style="width:100%">
     </div>
   </div>
 
   <div class="mySlides fade">
-    <img class="img-slide" src="{% static "media/esther-1-test.png" %}" style="width:100%">
-    <div class="slideshow-text"><h4>Portfolio Freelance Writer</h4>
-      <p>Django, HTML, CSS, JavaScript</p></div>
-  </div>
+    <div class="pic-transition">
+      <div class="slideshow-text"><h4>Portfolio Freelance Writer</h4>
+        <p>Django, HTML, CSS, JavaScript</p>
+        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+        Go to website</a></div>
+      <img class="img-slide" src="{% static "media/esther-1-test.png" %}" style="width:100%">
+      </div>
+    </div>
 
   <div class="mySlides fade">
-    <img class="img-slide" src="{% static "media/esther-2-test.png" %}" style="width:100%">
-    <div class="slideshow-text"><h4>Freelance Journalist Portfolio</h4>
-      <p>Django, HTML, CSS, JavaScript</p></div>
+    <div class="pic-transition">
+      <div class="slideshow-text"><h4>Freelance Journalist Portfolio</h4>
+        <p>Django, HTML, CSS, JavaScript</p>
+        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+        Go to website</a></div>
+      <img class="img-slide" src="{% static "media/esther-2-test.png" %}" style="width:100%">
+    </div>
   </div>
 
   <!-- Next and previous buttons -->

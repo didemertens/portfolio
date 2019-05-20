@@ -4,14 +4,14 @@
 }
 
 #projects-middle{
-  background-color: #B0C0BC;
-  height: 30vw;
+  height: 34.5vw;
   padding: 20px;
 }
 
 #projects-title{
   margin: 2vw 15vw;
   color: $dark-blue;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 // slideshow
@@ -20,17 +20,61 @@
 
 /* Slideshow container */
 .slideshow-container {
-  height: 145.5%;
+  background-color: $border-blue;
+  border: 5px solid $dark-blue;
+  height: 100%;
   max-width: 1000px;
   position: relative;
+  z-index: 0;
   margin: auto;
-  border: 8px solid $dark-blue;
   border-bottom: none;
 }
 
 .img-slide{
   height: 33vw;
   width: 48vw;
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.pic-transition:hover .slideshow-text {
+  visibility: visible;
+  opacity: 1;
+  color: $white-back;
+}
+
+.pic-transition:hover .img-slide{
+  opacity: 0.15;
+}
+
+/* Caption text */
+.slideshow-text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 10vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.link-slide{
+  text-decoration: none;
+  color: $dark-blue;
+  font-family: 'Bitter', serif;
+  cursor: pointer;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 12pt;
+  &:hover{
+  border-bottom: 1px solid $dark-blue;
+  text-decoration: none;
+  color: $dark-blue;
+  }
 }
 
 // /* Hide the images by default */
@@ -65,24 +109,13 @@
   background-color: $border-blue;
 }
 
-/* Caption text */
-.slideshow-text {
-  // color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  // position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-  background-color: $dark-blue;
-}
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: $dark-blue;
   border-radius: 50%;
   display: inline-block;
@@ -111,3 +144,5 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+

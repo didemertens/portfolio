@@ -177,14 +177,14 @@ html #menu-contact:hover {
 #about-middle {
   border-top: 8px solid #808A9F;
   border-bottom: 8px solid #808A9F;
-  background-color: #808A9F;
-  color: #F7F7F7;
+  background-color: #F7F7F7;
   height: 20vw;
   padding: 20px;
 }
 
 #about-title {
   color: #1F1F31;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 #projects {
@@ -193,14 +193,14 @@ html #menu-contact:hover {
 }
 
 #projects-middle {
-  background-color: #B0C0BC;
-  height: 30vw;
+  height: 34.5vw;
   padding: 20px;
 }
 
 #projects-title {
   margin: 2vw 15vw;
   color: #1F1F31;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 * {
@@ -209,17 +209,61 @@ html #menu-contact:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  height: 145.5%;
+  background-color: #808A9F;
+  border: 5px solid #1F1F31;
+  height: 100%;
   max-width: 1000px;
   position: relative;
+  z-index: 0;
   margin: auto;
-  border: 8px solid #1F1F31;
   border-bottom: none;
 }
 
 .img-slide {
   height: 33vw;
   width: 48vw;
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.pic-transition:hover .slideshow-text {
+  visibility: visible;
+  opacity: 1;
+  color: #F7F7F7;
+}
+
+.pic-transition:hover .img-slide {
+  opacity: 0.15;
+}
+
+/* Caption text */
+.slideshow-text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 10vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.link-slide {
+  text-decoration: none;
+  color: #1F1F31;
+  font-family: "Bitter", serif;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 12pt;
+}
+.link-slide:hover {
+  border-bottom: 1px solid #1F1F31;
+  text-decoration: none;
+  color: #1F1F31;
 }
 
 .mySlides {
@@ -253,22 +297,12 @@ html #menu-contact:hover {
   background-color: #808A9F;
 }
 
-/* Caption text */
-.slideshow-text {
-  font-size: 15px;
-  padding: 8px 12px;
-  width: 100%;
-  text-align: center;
-  color: white;
-  background-color: #1F1F31;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #1F1F31;
   border-radius: 50%;
   display: inline-block;
