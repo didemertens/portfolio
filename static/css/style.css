@@ -171,15 +171,20 @@ html #menu-contact:hover {
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 25vw 15vw;
+  margin: 25vw 20vw 5vw;
 }
 
 #about-middle {
-  border-top: 12px solid #808A9F;
-  border-bottom: 12px solid #808A9F;
-  background-color: #F7F7F7;
-  height: calc(calc(100vh - 5vw) - 52px);
+  border-top: 8px solid #808A9F;
+  border-bottom: 8px solid #808A9F;
+  background-color: #808A9F;
+  color: #F7F7F7;
+  height: 20vw;
   padding: 20px;
+}
+
+#about-title {
+  color: #1F1F31;
 }
 
 #projects {
@@ -189,8 +194,13 @@ html #menu-contact:hover {
 
 #projects-middle {
   background-color: #B0C0BC;
-  height: calc(calc(100vh - 5vw) - 52px);
+  height: 30vw;
   padding: 20px;
+}
+
+#projects-title {
+  margin: 2vw 15vw;
+  color: #1F1F31;
 }
 
 * {
@@ -199,15 +209,17 @@ html #menu-contact:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  height: 140%;
+  height: 145.5%;
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border: 8px solid #1F1F31;
+  border-bottom: none;
 }
 
 .img-slide {
-  height: 40vw;
-  width: 68vw;
+  height: 33vw;
+  width: 48vw;
 }
 
 .mySlides {
@@ -243,11 +255,12 @@ html #menu-contact:hover {
 
 /* Caption text */
 .slideshow-text {
-  border: 4px solid #808A9F;
   font-size: 15px;
   padding: 8px 12px;
   width: 100%;
   text-align: center;
+  color: white;
+  background-color: #1F1F31;
 }
 
 /* The dots/bullets/indicators */
