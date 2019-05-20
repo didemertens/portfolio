@@ -205,6 +205,11 @@ html #menu-contact:hover {
   margin: auto;
 }
 
+.img-slide {
+  height: 40vw;
+  width: 68vw;
+}
+
 .mySlides {
   display: none;
 }
@@ -238,7 +243,7 @@ html #menu-contact:hover {
 
 /* Caption text */
 .slideshow-text {
-  border: 4px solid #1F1F31;
+  border: 4px solid #808A9F;
   font-size: 15px;
   padding: 8px 12px;
   width: 100%;
