@@ -171,7 +171,7 @@ html #menu-contact:hover {
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 25vw 20vw 5vw;
+  margin: 25vw 20vw 8vw;
 }
 
 #about-middle {
@@ -181,15 +181,26 @@ html #menu-contact:hover {
   padding: 20px;
 }
 
-#text-middle {
-  font-size: 14pt;
+.text-middle {
+  font-size: 13pt;
   margin-left: 13vw;
   margin-right: 13vw;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#contact-about {
+  color: #1F1F31;
+  background-color: #808A9F;
+  cursor: pointer;
+  padding: 3px;
+}
+#contact-about:hover {
+  background-color: #DDA448;
 }
 
 #about-title {
   color: #1F1F31;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Bitter", serif;
   text-align: center;
 }
 
@@ -225,7 +236,8 @@ html #menu-contact:hover {
 #projects-title {
   margin: 2vw 15vw;
   color: #1F1F31;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Bitter", serif;
+  text-align: center;
 }
 
 * {
@@ -372,6 +384,17 @@ html #menu-contact:hover {
   background-color: #F7F7F7;
   height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
+}
+
+#title-contact {
+  color: #1F1F31;
+  font-family: "Bitter", serif;
+  text-align: center;
+}
+
+#text-contact {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 13pt;
 }
 
 #border-bottom {

@@ -1,12 +1,17 @@
-#contact {
-  padding-top: 2.5vw;
-  padding-bottom: 2.5vw;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 15 |   color: $dark-blue;
+ *    |          ^^^^^^^^^^
+ *    '
+ *   static/scss/contact-bottom.scss 15:10  root stylesheet */
 
-#contact-bottom {
-  background-color: $white-back;
-  height: calc(calc(100vh - 5vw) - 52px);
-  padding: 20px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 15 \2502    color: $dark-blue;\a    \2502           ^^^^^^^^^^\a    \2575 \a   static/scss/contact-bottom.scss 15:10  root stylesheet";
 }
-
-/*# sourceMappingURL=contact-bottom.css.map */

@@ -1,7 +1,7 @@
 #about{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 25vw 20vw 5vw;
+  margin: 25vw 20vw 8vw;
 }
 
 #about-middle{
@@ -12,15 +12,26 @@
   padding: 20px;
 }
 
-#text-middle{
-  font-size: 14pt;
+.text-middle{
+  font-size: 13pt;
   margin-left: 13vw;
   margin-right: 13vw;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#contact-about{
+  color: $dark-blue;
+  background-color: $border-blue;
+  cursor: pointer;
+  padding: 3px;
+  &:hover{
+    background-color: $orange-footer;
+  }
 }
 
 #about-title{
   color: $dark-blue;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Bitter', serif;
   text-align: center;
 }
 

@@ -10,3 +10,15 @@
   height: calc(calc(100vh - 5vw) - 52px);
   padding: 20px;
 }
+
+#title-contact{
+  color: $dark-blue;
+  font-family: 'Bitter', serif;
+  text-align: center;
+}
+
+
+#text-contact{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13pt;
+}
