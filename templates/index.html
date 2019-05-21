@@ -29,8 +29,11 @@
 <div id="about">
   <h1 id="about-title">About me</h1>
   <div id="about-middle">
-    <p>I'm a full-stack web developer with a love for Python, JavaScript,
-    Django, HTML and CSS.</p>
+    <p id="text-middle">I'm a full-stack web developer in London with a love for Python,
+      JavaScript, Django, HTML and CSS. <p onclick="jump('contact')"
+      id="text-middle"><span id="contact-about">Contact</span>
+      me if you want me to build you a website,
+      if I can help solve a problem or if you just want to chat.</p>
     <ul id="skill-list">
         <i id="skill-icon" class="fab fa-python"></i>
       <img id="django-logo" src="{% static "media/django-logo.png" %}" alt="django">
@@ -47,54 +50,53 @@
   <h1 id="projects-title">My projects</h1>
   <div id="projects-middle">
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-  <!-- Full-width images with caption text -->
-  <div class="mySlides fade">
-    <div class="pic-transition">
-      <div class="slideshow-text"><h4>Book Blog</h4>
-        <p>Django, HTML, CSS, JavaScript</p>
-        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
-        Go to website</a></div>
-        <img class="img-slide" src="{% static "media/book-pic.png" %}"
-        style="width:100%">
-    </div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="pic-transition">
-      <div class="slideshow-text"><h4>Portfolio Freelance Writer</h4>
-        <p>Django, HTML, CSS, JavaScript</p>
-        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
-        Go to website</a></div>
-      <img class="img-slide" src="{% static "media/esther-1-test.png" %}" style="width:100%">
+      <!-- Full-width images with caption text -->
+      <div class="mySlides fade">
+        <div class="pic-transition">
+          <div class="slideshow-text"><h4>Book Blog</h4>
+            <p>Django, HTML, CSS, JavaScript</p>
+            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            Go to website</a></div>
+            <img class="img-slide" src="{% static "media/book-pic.png" %}"
+            style="width:100%">
+        </div>
       </div>
+
+      <div class="mySlides fade">
+        <div class="pic-transition">
+          <div class="slideshow-text"><h4>Portfolio Freelance Writer</h4>
+            <p>Django, HTML, CSS, JavaScript</p>
+            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            Go to website</a></div>
+          <img class="img-slide" src="{% static "media/esther-1-test.png" %}" style="width:100%">
+          </div>
+        </div>
+
+      <div class="mySlides fade">
+        <div class="pic-transition">
+          <div class="slideshow-text"><h4>Freelance Journalist Portfolio</h4>
+            <p>Django, HTML, CSS, JavaScript</p>
+            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            Go to website</a></div>
+          <img class="img-slide" src="{% static "media/esther-2-test.png" %}" style="width:100%">
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-
-  <div class="mySlides fade">
-    <div class="pic-transition">
-      <div class="slideshow-text"><h4>Freelance Journalist Portfolio</h4>
-        <p>Django, HTML, CSS, JavaScript</p>
-        <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
-        Go to website</a></div>
-      <img class="img-slide" src="{% static "media/esther-2-test.png" %}" style="width:100%">
     </div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
   </div>
 </div>
 
