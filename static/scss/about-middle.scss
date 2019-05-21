@@ -16,3 +16,19 @@
   color: $dark-blue;
   font-family: 'Noto Sans TC', sans-serif;
 }
+
+#skill-icon{
+  font-size: 30pt;
+  color: $skill-color;
+}
+
+#django-logo{
+  margin-top: -1.5vw;
+  height: 5vw;
+}
+
+#skill-list{
+  margin-top: 10vw;
+  display: flex;
+  justify-content: space-around;
+}

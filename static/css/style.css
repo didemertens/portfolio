@@ -187,6 +187,22 @@ html #menu-contact:hover {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+#skill-icon {
+  font-size: 30pt;
+  color: #454545;
+}
+
+#django-logo {
+  margin-top: -1.5vw;
+  height: 5vw;
+}
+
+#skill-list {
+  margin-top: 10vw;
+  display: flex;
+  justify-content: space-around;
+}
+
 #projects {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
@@ -313,7 +329,7 @@ html #menu-contact:hover {
 }
 
 .active, .dot:hover {
-  background-color: #808A9F;
+  background-color: #DDA448;
 }
 
 /* Fading animation */
