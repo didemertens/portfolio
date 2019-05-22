@@ -81,7 +81,7 @@ html .menu-item {
   top: 50%;
   left: 50%;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 13pt;
+  font-size: 12pt;
   color: #F7F7F7;
   cursor: pointer;
 }
@@ -114,7 +114,7 @@ html #menu-projects {
 html #menu-projects:hover {
   left: -0.5vw;
   border-radius: 5px;
-  background-color: #DDA448;
+  background-color: #93929B;
 }
 @keyframes showAbout {
   0% {
@@ -138,7 +138,7 @@ html #menu-about {
 html #menu-about:hover {
   top: -0.5vw;
   border-radius: 5px;
-  background-color: #DDA448;
+  background-color: #93929B;
 }
 @keyframes showContact {
   0% {
@@ -171,7 +171,7 @@ html #menu-contact {
 html #menu-contact:hover {
   right: -0.5vw;
   border-radius: 5px;
-  background-color: #DDA448;
+  background-color: #93929B;
 }
 
 #about {
@@ -197,12 +197,13 @@ html #menu-contact:hover {
 #contact-about {
   border-radius: 5px;
   color: #1F1F31;
-  background-color: #DDA448;
+  background-color: #B2B1BC;
   cursor: pointer;
   padding: 2.5px;
 }
 #contact-about:hover {
-  background-color: #808A9F;
+  background-color: #1F1F31;
+  color: white;
 }
 
 #about-title {
@@ -233,7 +234,7 @@ html #menu-contact:hover {
 }
 
 #projects-middle {
-  background-color: #1F1F31;
+  background-color: #B2B1BC;
   height: 39vw;
   padding: 20px;
   position: relative;
@@ -276,20 +277,21 @@ html #menu-contact:hover {
 }
 
 .pic-transition:hover .img-slide {
-  opacity: 0.15;
+  opacity: 0.2;
 }
 
 /* Caption text */
 .slideshow-text {
+  background-color: #808A9F;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 10vw;
+  margin-top: 24vw;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 2s;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -303,12 +305,12 @@ html #menu-contact:hover {
   cursor: pointer;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 12pt;
-  background-color: #DDA448;
+  background-color: #1F1F31;
 }
 .link-slide:hover {
   text-decoration: none;
   color: #F7F7F7;
-  background-color: #808A9F;
+  background-color: #B2B1BC;
 }
 
 .mySlides {
@@ -348,14 +350,14 @@ html #menu-contact:hover {
   height: 15px;
   width: 15px;
   margin: 10px 2px;
-  background-color: #808A9F;
+  background-color: #1F1F31;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #DDA448;
+  background-color: #F7F7F7;
 }
 
 /* Fading animation */
@@ -408,7 +410,7 @@ html #menu-contact:hover {
 #border-bottom {
   height: 3vw;
   margin-bottom: 0;
-  background: #DDA448;
+  background: #B2B1BC;
 }
 
 /*# sourceMappingURL=style.css.map */

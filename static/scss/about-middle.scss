@@ -22,11 +22,12 @@
 #contact-about{
   border-radius: 5px;
   color: $dark-blue;
-  background-color: $orange-footer;
+  background-color: $grey-button;
   cursor: pointer;
   padding: 2.5px;
   &:hover{
-    background-color: $border-blue;
+    background-color: $dark-blue;
+    color: white;
   }
 }
 
