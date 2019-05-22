@@ -267,7 +267,7 @@ html #menu-contact:hover {
   position: relative;
   z-index: -1;
   opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 .pic-transition:hover .slideshow-text {
@@ -291,7 +291,7 @@ html #menu-contact:hover {
   margin-top: 24vw;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -388,11 +388,12 @@ html #menu-contact:hover {
 #contact {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
+  margin: 1vw 20vw 8vw;
 }
 
 #contact-bottom {
   background-color: #F7F7F7;
-  height: calc(calc(100vh - 5vw) - 52px);
+  height: 20vw;
   padding: 20px;
 }
 
@@ -400,17 +401,20 @@ html #menu-contact:hover {
   color: #1F1F31;
   font-family: "Bitter", serif;
   text-align: center;
+  border-bottom: 8px solid #808A9F;
 }
 
 #text-contact {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 13pt;
+  margin-left: 13vw;
+  margin-right: 13vw;
 }
 
 #border-bottom {
   height: 3vw;
   margin-bottom: 0;
-  background: #B2B1BC;
+  background: #808A9F;
 }
 
 /*# sourceMappingURL=style.css.map */

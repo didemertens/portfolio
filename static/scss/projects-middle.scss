@@ -39,7 +39,7 @@
   position: relative;
   z-index: -1;
   opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 .pic-transition:hover .slideshow-text {
@@ -63,7 +63,7 @@
   margin-top: 24vw;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
   font-family: 'Noto Sans TC', sans-serif;
 }
 

@@ -1,13 +1,12 @@
 #contact{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
+  margin: 1vw 20vw 8vw;
 }
 
 #contact-bottom{
-  // border: 6px solid $grey-border;
-  // box-shadow: 5px 5px $border-shadow;
   background-color: #F7F7F7;
-  height: calc(calc(100vh - 5vw) - 52px);
+  height: 20vw;
   padding: 20px;
 }
 
@@ -15,10 +14,14 @@
   color: $dark-blue;
   font-family: 'Bitter', serif;
   text-align: center;
+  border-bottom: 8px solid $border-blue;
 }
 
 
 #text-contact{
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 13pt;
+  margin-left: 13vw;
+  margin-right: 13vw;
 }
+
