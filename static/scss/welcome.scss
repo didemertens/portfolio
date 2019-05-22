@@ -115,18 +115,18 @@ html {
     left: 50%;
   }
   100% {
-    top: 0;
+    top: 1vw;
     transform: translate(-50%, -150%);
   }
 }
 
 #menu-about{
   animation: 1s showAbout;
-  top: 0;
+  top: 1vw;
   transform: translate(-50%, -150%);
   padding: 7px;
   &:hover {
-    top: -0.5vw;
+    top: 0.7vw;
     border-radius: 5px;
     background-color: $grey-menu;
   }
