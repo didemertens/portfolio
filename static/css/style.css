@@ -8,7 +8,7 @@ body {
   font-size: 20pt;
   color: #1F1F31;
   position: fixed;
-  bottom: 15px;
+  bottom: 8px;
   right: 35px;
   display: none;
   border: none;
@@ -189,13 +189,14 @@ html #menu-contact:hover {
 }
 
 #contact-about {
+  border-radius: 5px;
   color: #1F1F31;
-  background-color: #808A9F;
+  background-color: #DDA448;
   cursor: pointer;
-  padding: 3px;
+  padding: 2.5px;
 }
 #contact-about:hover {
-  background-color: #DDA448;
+  background-color: #808A9F;
 }
 
 #about-title {
@@ -287,6 +288,7 @@ html #menu-contact:hover {
 }
 
 .link-slide {
+  border-radius: 5px;
   text-decoration: none;
   line-height: 35pt;
   padding: 0.5vw;
