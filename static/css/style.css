@@ -51,7 +51,7 @@ html #menu-total {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1vw;
+  margin-top: 1.5vw;
   margin-bottom: -14vw;
   position: relative;
 }
@@ -109,10 +109,12 @@ html #menu-projects {
   top: 1.5vw;
   left: 0;
   z-index: 2;
+  padding: 7px;
 }
 html #menu-projects:hover {
   left: -0.5vw;
-  border-bottom: 2px solid #808A9F;
+  border-radius: 5px;
+  background-color: #DDA448;
 }
 @keyframes showAbout {
   0% {
@@ -131,10 +133,12 @@ html #menu-about {
   animation: 1s showAbout;
   top: 0;
   transform: translate(-50%, -150%);
+  padding: 7px;
 }
 html #menu-about:hover {
   top: -0.5vw;
-  border-bottom: 2px solid #808A9F;
+  border-radius: 5px;
+  background-color: #DDA448;
 }
 @keyframes showContact {
   0% {
@@ -162,10 +166,12 @@ html #menu-contact {
   right: 0;
   left: auto;
   z-index: 2;
+  padding: 7px;
 }
 html #menu-contact:hover {
   right: -0.5vw;
-  border-bottom: 2px solid #808A9F;
+  border-radius: 5px;
+  background-color: #DDA448;
 }
 
 #about {
