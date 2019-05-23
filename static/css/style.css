@@ -274,6 +274,7 @@ html #menu-contact:hover {
   visibility: visible;
   opacity: 1;
   color: #F7F7F7;
+  background-color: #808A9F;
 }
 
 .pic-transition:hover .img-slide {
@@ -282,7 +283,6 @@ html #menu-contact:hover {
 
 /* Caption text */
 .slideshow-text {
-  background-color: #808A9F;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -291,7 +291,7 @@ html #menu-contact:hover {
   margin-top: 24vw;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
   font-family: "Noto Sans TC", sans-serif;
 }
 
