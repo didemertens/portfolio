@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load render_partial %}
 
 {% block body %}
 
@@ -108,13 +109,12 @@
     <p id="text-contact">Find me on Github and LinkedIn.
     Send me an email on d.g.j.mertens@gmail.com (yes, I've got a lot of names).</p>
 
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-  <div class="form-actions">
-    <button type="submit">Send</button>
+  <div id="contact-form">
+    {% render_partial 'basic_app.views.emailView' %}
+
   </div>
-  </form>
+
+  <a>Send another message</a>
 
   </div>
 </div>
