@@ -107,6 +107,15 @@
     <h1 id="title-contact">Contact me</h1>
     <p id="text-contact">Find me on Github and LinkedIn.
     Send me an email on d.g.j.mertens@gmail.com (yes, I've got a lot of names).</p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+  <div class="form-actions">
+    <button type="submit">Send</button>
+  </div>
+  </form>
+
   </div>
 </div>
 
