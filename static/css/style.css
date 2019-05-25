@@ -440,6 +440,19 @@ textarea:focus {
   background-color: #FCFCFC;
 }
 
+#btn-contact {
+  border-radius: 5px;
+  color: #1F1F31;
+  background-color: #B2B1BC;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 13pt;
+}
+#btn-contact:hover {
+  background-color: #1F1F31;
+  color: white;
+}
+
 #border-bottom {
   height: 3vw;
   margin-bottom: 0;
