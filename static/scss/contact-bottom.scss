@@ -1,12 +1,12 @@
 #contact{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 1vw 20vw 8vw;
+  margin: 1vw 20vw;
 }
 
 #contact-bottom{
   background-color: #F7F7F7;
-  height: 20vw;
+  height: 35vw;
   padding: 20px;
 }
 
@@ -25,3 +25,31 @@
   margin-right: 13vw;
 }
 
+#contact-form{
+  margin-top: 3vw;
+  margin-left: 15vw;
+}
+
+label{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-style: lighter;
+  display: block;
+}
+
+input{
+  width: 25vw;
+  height: 2vw;
+  border: 2px solid $border-blue;
+  &:focus{
+    background-color: $white-form;
+  }
+}
+
+textarea{
+  width: 25vw;
+  height: 10vw;
+  border: 2px solid $border-blue;
+  &:focus{
+    background-color: $white-form;
+  }
+}

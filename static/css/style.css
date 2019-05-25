@@ -388,12 +388,12 @@ html #menu-contact:hover {
 #contact {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 1vw 20vw 8vw;
+  margin: 1vw 20vw;
 }
 
 #contact-bottom {
   background-color: #F7F7F7;
-  height: 20vw;
+  height: 35vw;
   padding: 20px;
 }
 
@@ -409,6 +409,35 @@ html #menu-contact:hover {
   font-size: 13pt;
   margin-left: 13vw;
   margin-right: 13vw;
+}
+
+#contact-form {
+  margin-top: 3vw;
+  margin-left: 15vw;
+}
+
+label {
+  font-family: "Noto Sans TC", sans-serif;
+  font-style: lighter;
+  display: block;
+}
+
+input {
+  width: 25vw;
+  height: 2vw;
+  border: 2px solid #808A9F;
+}
+input:focus {
+  background-color: #FCFCFC;
+}
+
+textarea {
+  width: 25vw;
+  height: 10vw;
+  border: 2px solid #808A9F;
+}
+textarea:focus {
+  background-color: #FCFCFC;
 }
 
 #border-bottom {

@@ -14,4 +14,5 @@ $(document).on('submit','#contact-bottom-form',function(e){
       alert('Thank you for your message.');
     }
   });
+  $("#contact-bottom-form")[0].reset();
 });
