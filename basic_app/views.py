@@ -15,14 +15,13 @@ def emailView(request):
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data['name']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
+            name = request.POST['name']
+            from_email = request.POST['from_email']
+            message = request.POST['message']
             try:
                 send_mail(name, message, from_email, ['dideveldhuijzen@hotmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            # return redirect('success')
     return render(request, "email.html", {'form': form})
 
 # def successView(request):
