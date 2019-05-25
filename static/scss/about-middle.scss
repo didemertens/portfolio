@@ -8,12 +8,19 @@
   border-top: 8px solid $border-blue;
   // border-bottom: 8px solid $border-blue;
   background-color: $white-back;
-  height: 20vw;
+  height: 23vw;
   padding: 20px;
+}
+
+.text-first-middle{
+  font-size: 13pt;
+  margin: 4vw 13vw;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .text-middle{
   font-size: 13pt;
+  margin-top: -4vw;
   margin-left: 13vw;
   margin-right: 13vw;
   font-family: 'Noto Sans TC', sans-serif;
