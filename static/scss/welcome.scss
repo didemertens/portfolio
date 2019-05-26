@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 
+#welcome-header{
+  height: 550px;
+}
+
 #welcome-heading{
   background-color: $dark-blue;
   height: 400px;
@@ -9,7 +13,6 @@ html {
 }
 
 #title-heading{
-  margin-top: 3vw;
   padding: 2vw;
   font-size: 40pt;
   color: $white-back;
@@ -39,23 +42,50 @@ html {
 
 #arrow-down{
   width: 100%;
-  margin-top: 18vw;
+  margin-top: 5vw;
   text-align: center;
   font-size: 35pt;
   color: $dark-blue;
   cursor: pointer;
   &:hover{
-    margin-top: 19vw;
+    margin-top: 6vw;
   }
 }
 
-#laptop_image{
+#laptop-image{
   border-radius: 50%;
   width: 360px;
   height: 360px;
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);
+}
+
+@media (max-width: 650px) {
+  #laptop-image{
+    height: 200px;
+    width: 200px;
+  }
+  #menu-total{
+    width: 230px;
+    height: 230px;
+    margin-top: 165px;
+  }
+  #title-heading{
+    font-size: 33pt;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1200px) {
+  #laptop-image{
+    height: 300px;
+    width: 300px;
+  }
+  #menu-total{
+    width: 330px;
+    height: 330px;
+    margin-top: 57px;
+  }
 }
 
 // menu animation
@@ -73,7 +103,7 @@ html {
   cursor: pointer;
 }
 
-@keyframes showProjects{
+@keyframes showProjectsBig{
   0%{
     padding: 0;
     margin: 0;
@@ -91,16 +121,30 @@ html {
   }
 }
 
+@keyframes showProjectsSmall{
+  0%{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: -1vw;
+    left: -7vw;
+    z-index: 0;
+  }
+}
+
 #menu-projects{
-  animation: 1s showProjects;
   transform: rotate(-45deg);
   transform-origin: center;
-  top: 1.5vw;
-  left: 0;
   z-index: 2;
   padding: 7px;
   &:hover {
-    left: -0.5vw;
     border-radius: 5px;
     background-color: $grey-menu;
   }
@@ -132,7 +176,7 @@ html {
   }
 }
 
-@keyframes showContact{
+@keyframes showContactBig{
   0%{
     padding: 0;
     margin: 0;
@@ -151,18 +195,71 @@ html {
   }
 }
 
+@keyframes showContactSmall{
+  0%{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: -1vw;
+    right: -7vw;
+    left: auto;
+    z-index: 0;
+  }
+}
+
 #menu-contact{
-  animation: 1s showContact;
   transform: rotate(45deg);
   transform-origin: center;
-  top: 1.5vw;
-  right: 0;
   left: auto;
   z-index: 2;
   padding: 7px;
   &:hover {
-    right: -0.5vw;
     border-radius: 5px;
     background-color: $grey-menu;
   }
 }}
+
+@media (max-width: 650px) {
+  #menu-contact{
+  animation: 1s showContactSmall;
+  right: -7vw;
+  top: -1vw;
+    &:hover{
+      right: -7vw;
+    }
+  }
+  #menu-projects{
+    animation: 1s showProjectsSmall;
+    top: -1vw;
+    left: -7vw;
+    &:hover{
+      left: -7vw;
+    }
+  }
+}
+
+@media (min-width: 651px) {
+  #menu-contact{
+    animation: 1s showContactBig;
+    top: 1.5vw;
+    right: 0;
+    &:hover{
+      right: -0.5vw;
+    }
+  }
+  #menu-projects{
+    animation: 1s showProjectsBig;
+    top: 1.5vw;
+    left: 0;
+    &:hover{
+      left: -0.5vw;
+    }
+  }
+}

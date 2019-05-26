@@ -23,6 +23,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html #welcome-header {
+  height: 550px;
+}
 html #welcome-heading {
   background-color: #1F1F31;
   height: 400px;
@@ -30,7 +33,6 @@ html #welcome-heading {
   margin-top: -2.5vw;
 }
 html #title-heading {
-  margin-top: 3vw;
   padding: 2vw;
   font-size: 40pt;
   color: #F7F7F7;
@@ -57,22 +59,47 @@ html #menu-total {
 }
 html #arrow-down {
   width: 100%;
-  margin-top: 18vw;
+  margin-top: 5vw;
   text-align: center;
   font-size: 35pt;
   color: #1F1F31;
   cursor: pointer;
 }
 html #arrow-down:hover {
-  margin-top: 19vw;
+  margin-top: 6vw;
 }
-html #laptop_image {
+html #laptop-image {
   border-radius: 50%;
   width: 360px;
   height: 360px;
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);
+}
+@media (max-width: 650px) {
+  html #laptop-image {
+    height: 200px;
+    width: 200px;
+  }
+  html #menu-total {
+    width: 230px;
+    height: 230px;
+    margin-top: 165px;
+  }
+  html #title-heading {
+    font-size: 33pt;
+  }
+}
+@media (min-width: 651px) and (max-width: 1200px) {
+  html #laptop-image {
+    height: 300px;
+    width: 300px;
+  }
+  html #menu-total {
+    width: 330px;
+    height: 330px;
+    margin-top: 57px;
+  }
 }
 html .menu-item {
   padding: 0;
@@ -85,7 +112,7 @@ html .menu-item {
   color: #F7F7F7;
   cursor: pointer;
 }
-@keyframes showProjects {
+@keyframes showProjectsBig {
   0% {
     padding: 0;
     margin: 0;
@@ -102,17 +129,30 @@ html .menu-item {
     z-index: 0;
   }
 }
+@keyframes showProjectsSmall {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: -1vw;
+    left: -7vw;
+    z-index: 0;
+  }
+}
 html #menu-projects {
-  animation: 1s showProjects;
   transform: rotate(-45deg);
   transform-origin: center;
-  top: 1.5vw;
-  left: 0;
   z-index: 2;
   padding: 7px;
 }
 html #menu-projects:hover {
-  left: -0.5vw;
   border-radius: 5px;
   background-color: #93929B;
 }
@@ -140,7 +180,7 @@ html #menu-about:hover {
   border-radius: 5px;
   background-color: #93929B;
 }
-@keyframes showContact {
+@keyframes showContactBig {
   0% {
     padding: 0;
     margin: 0;
@@ -158,32 +198,83 @@ html #menu-about:hover {
     z-index: 0;
   }
 }
+@keyframes showContactSmall {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: -1vw;
+    right: -7vw;
+    left: auto;
+    z-index: 0;
+  }
+}
 html #menu-contact {
-  animation: 1s showContact;
   transform: rotate(45deg);
   transform-origin: center;
-  top: 1.5vw;
-  right: 0;
   left: auto;
   z-index: 2;
   padding: 7px;
 }
 html #menu-contact:hover {
-  right: -0.5vw;
   border-radius: 5px;
   background-color: #93929B;
 }
 
+@media (max-width: 650px) {
+  #menu-contact {
+    animation: 1s showContactSmall;
+    right: -7vw;
+    top: -1vw;
+  }
+  #menu-contact:hover {
+    right: -7vw;
+  }
+
+  #menu-projects {
+    animation: 1s showProjectsSmall;
+    top: -1vw;
+    left: -7vw;
+  }
+  #menu-projects:hover {
+    left: -7vw;
+  }
+}
+@media (min-width: 651px) {
+  #menu-contact {
+    animation: 1s showContactBig;
+    top: 1.5vw;
+    right: 0;
+  }
+  #menu-contact:hover {
+    right: -0.5vw;
+  }
+
+  #menu-projects {
+    animation: 1s showProjectsBig;
+    top: 1.5vw;
+    left: 0;
+  }
+  #menu-projects:hover {
+    left: -0.5vw;
+  }
+}
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 25vw 20vw 8vw;
+  margin: 6vw 20vw 8vw;
 }
 
 #about-middle {
   border-top: 8px solid #808A9F;
   background-color: #F7F7F7;
-  height: 30vw;
   padding: 20px;
 }
 
@@ -201,6 +292,36 @@ html #menu-contact:hover {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+@media (max-width: 700px) {
+  .text-first-middle {
+    margin: 2vw 4vw;
+    font-size: 15pt;
+  }
+
+  .text-middle {
+    margin: 2vw 4vw;
+    font-size: 15pt;
+  }
+
+  #about {
+    margin: 11.5vw 10vw 8vw;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .text-first-middle {
+    margin: 2vw 7vw;
+    font-size: 13pt;
+  }
+
+  .text-middle {
+    margin: 2vw 7vw;
+    font-size: 13pt;
+  }
+
+  #about {
+    margin: 6vw 17vw 8vw;
+  }
+}
 #contact-about {
   border-radius: 5px;
   color: #1F1F31;
@@ -224,9 +345,13 @@ html #menu-contact:hover {
   color: #454545;
 }
 
+#skill-icon-empty {
+  width: 8vw;
+}
+
 #django-logo {
   margin-top: -1.5vw;
-  height: 7vw;
+  height: 100px;
 }
 
 #skill-list {
@@ -235,6 +360,29 @@ html #menu-contact:hover {
   justify-content: space-around;
 }
 
+#row-two-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  #skill-icon {
+    font-size: 20pt;
+  }
+
+  #django-logo {
+    height: 50px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  #skill-icon {
+    font-size: 30pt;
+  }
+
+  #django-logo {
+    height: 80px;
+  }
+}
 #projects {
   padding-top: 0.2vw;
   padding-bottom: 2.5vw;

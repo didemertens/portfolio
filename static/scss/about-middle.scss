@@ -1,14 +1,12 @@
 #about{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 25vw 20vw 8vw;
+  margin: 6vw 20vw 8vw;
 }
 
 #about-middle{
   border-top: 8px solid $border-blue;
-  // border-bottom: 8px solid $border-blue;
   background-color: $white-back;
-  height: 30vw;
   padding: 20px;
 }
 
@@ -24,6 +22,34 @@
   margin-left: 13vw;
   margin-right: 13vw;
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+@media (max-width: 700px) {
+  .text-first-middle{
+    margin: 2vw 4vw;
+    font-size: 15pt;
+  }
+  .text-middle{
+    margin: 2vw 4vw;
+    font-size: 15pt;
+  }
+  #about{
+    margin: 11.5vw 10vw 8vw;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  .text-first-middle{
+    margin: 2vw 7vw;
+    font-size: 13pt;
+  }
+  .text-middle{
+    margin: 2vw 7vw;
+    font-size: 13pt;
+  }
+  #about{
+    margin: 6vw 17vw 8vw;
+  }
 }
 
 #contact-about{
@@ -49,13 +75,42 @@
   color: $skill-color;
 }
 
+#skill-icon-empty{
+  width: 8vw;
+}
+
+
 #django-logo{
   margin-top: -1.5vw;
-  height: 7vw;
+  height: 100px;
 }
 
 #skill-list{
   margin-top: 10vw;
   display: flex;
   justify-content: space-around;
+}
+
+
+#row-two-icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  #skill-icon{
+    font-size: 20pt;
+  }
+  #django-logo{
+    height: 50px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  #skill-icon{
+    font-size: 30pt;
+  }
+  #django-logo{
+    height: 80px;
+  }
 }
