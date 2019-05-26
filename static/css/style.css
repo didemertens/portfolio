@@ -310,12 +310,10 @@ html #menu-contact:hover {
 @media (min-width: 701px) and (max-width: 1200px) {
   .text-first-middle {
     margin: 2vw 7vw;
-    font-size: 13pt;
   }
 
   .text-middle {
     margin: 2vw 7vw;
-    font-size: 13pt;
   }
 
   #about {
@@ -345,33 +343,62 @@ html #menu-contact:hover {
   color: #454545;
 }
 
-#skill-icon-empty {
-  width: 8vw;
-}
-
 #django-logo {
   margin-top: -1.5vw;
   height: 100px;
 }
 
 #skill-list {
-  margin-top: 10vw;
+  margin-left: -20px;
+  margin-top: 15vw;
   display: flex;
   justify-content: space-around;
 }
 
 #row-two-icons {
+  width: 15vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+#row-three-icons {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 700px) {
   #skill-icon {
-    font-size: 20pt;
+    font-size: 30pt;
   }
 
   #django-logo {
-    height: 50px;
+    height: 90px;
+  }
+
+  #row-one-icons {
+    margin-left: 17vw;
+  }
+
+  #row-two-icons {
+    margin-top: 0vw;
+    margin-left: 14vw;
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #row-three-icons {
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-left: 14vw;
+  }
+
+  #skill-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 701px) and (max-width: 1200px) {
