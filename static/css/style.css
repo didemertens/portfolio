@@ -57,14 +57,14 @@ html #menu-total {
 }
 html #arrow-down {
   width: 5vw;
-  margin-top: 40vh;
+  margin-top: 38vh;
   margin-left: 49vw;
   font-size: 35pt;
   color: #1F1F31;
   cursor: pointer;
 }
 html #arrow-down:hover {
-  margin-top: 38vh;
+  margin-top: 40vh;
 }
 html #laptop_image {
   border-radius: 50%;
