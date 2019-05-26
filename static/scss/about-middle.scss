@@ -83,7 +83,7 @@
   margin-left: -20px;
   margin-top: 15vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #row-two-icons{
@@ -106,11 +106,12 @@
     height: 90px;
   }
   #row-one-icons{
-    margin-left: 17vw;
+    text-align: center;
   }
   #row-two-icons{
     margin-top: 0vw;
-    margin-left: 14vw;
+    margin-left: auto;
+    margin-right: auto;
     width: 32vw;
     display: flex;
     justify-content: space-between;
@@ -120,7 +121,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
-    margin-left: 14vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   #skill-list{
     display: flex;

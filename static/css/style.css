@@ -352,7 +352,7 @@ html #menu-contact:hover {
   margin-left: -20px;
   margin-top: 15vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #row-two-icons {
@@ -377,12 +377,13 @@ html #menu-contact:hover {
   }
 
   #row-one-icons {
-    margin-left: 17vw;
+    text-align: center;
   }
 
   #row-two-icons {
     margin-top: 0vw;
-    margin-left: 14vw;
+    margin-left: auto;
+    margin-right: auto;
     width: 32vw;
     display: flex;
     justify-content: space-between;
@@ -393,7 +394,8 @@ html #menu-contact:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
-    margin-left: 14vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #skill-list {
