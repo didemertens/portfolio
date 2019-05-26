@@ -6,7 +6,7 @@
 
 #contact-bottom{
   background-color: #F7F7F7;
-  height: 40vw;
+  height: 43vw;
   padding: 20px;
 }
 
@@ -24,8 +24,22 @@
   margin: 4vw 13vw;
 }
 
+#link-personal{
+  border-radius: 5px;
+  color: $dark-blue;
+  background-color: $grey-button;
+  cursor: pointer;
+  padding: 2.5px;
+  text-decoration: none;
+  &:hover{
+    background-color: $dark-blue;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 #contact-form{
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-left: 15vw;
 }
 

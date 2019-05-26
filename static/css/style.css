@@ -400,7 +400,7 @@ html #menu-contact:hover {
 
 #contact-bottom {
   background-color: #F7F7F7;
-  height: 40vw;
+  height: 43vw;
   padding: 20px;
 }
 
@@ -417,8 +417,22 @@ html #menu-contact:hover {
   margin: 4vw 13vw;
 }
 
+#link-personal {
+  border-radius: 5px;
+  color: #1F1F31;
+  background-color: #B2B1BC;
+  cursor: pointer;
+  padding: 2.5px;
+  text-decoration: none;
+}
+#link-personal:hover {
+  background-color: #1F1F31;
+  color: white;
+  text-decoration: none;
+}
+
 #contact-form {
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-left: 15vw;
 }
 
