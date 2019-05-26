@@ -395,7 +395,7 @@ html #menu-contact:hover {
 #contact {
   padding-top: 1vw;
   padding-bottom: 2.5vw;
-  margin: 1vw 20vw;
+  margin: 2vw 20vw 2.5vw;
 }
 
 #contact-bottom {
@@ -474,9 +474,27 @@ textarea:focus {
 }
 
 #border-bottom {
-  height: 3vw;
+  height: 3.5vw;
   margin-bottom: 0;
   background: #808A9F;
+}
+
+#icon-personal {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 95vw;
+}
+
+#personal-icon {
+  text-decoration: none;
+  font-size: 20pt;
+  color: #1F1F31;
+  line-height: 1.9 !important;
+}
+#personal-icon:hover {
+  text-decoration: none;
+  color: #F7F7F7;
 }
 
 /*# sourceMappingURL=style.css.map */

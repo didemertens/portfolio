@@ -4,6 +4,8 @@
 
 {% block body %}
 
+<base target="_blank">
+
 <a onclick="topFunction()" id="myBtn" title="Go to top">
   <i class="fas fa-arrow-up"></i>
 </a>
@@ -57,7 +59,7 @@
         <div class="pic-transition">
           <div class="slideshow-text"><h4>Book Blog</h4>
             <p>Django, HTML, CSS, JavaScript</p>
-            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            <a class="link-slide" href="https://bookblogdide.herokuapp.com/">
             Go to website</a></div>
             <img class="img-slide" src="{% static "media/book-pic.png" %}"
             style="width:100%">
@@ -68,7 +70,7 @@
         <div class="pic-transition">
           <div class="slideshow-text"><h4>Portfolio Freelance Writer</h4>
             <p>Django, HTML, CSS, JavaScript</p>
-            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            <a class="link-slide" href="https://bookblogdide.herokuapp.com/">
             Go to website</a></div>
           <img class="img-slide" src="{% static "media/esther-1-test.png" %}" style="width:100%">
           </div>
@@ -78,7 +80,7 @@
         <div class="pic-transition">
           <div class="slideshow-text"><h4>Freelance Journalist Portfolio</h4>
             <p>Django, HTML, CSS, JavaScript</p>
-            <a class="link-slide" target="_blank" href="https://bookblogdide.herokuapp.com/">
+            <a class="link-slide" href="https://bookblogdide.herokuapp.com/">
             Go to website</a></div>
           <img class="img-slide" src="{% static "media/esther-2-test.png" %}" style="width:100%">
         </div>
@@ -105,8 +107,8 @@
   <div id="contact-bottom">
     <h1 id="title-contact">Contact me</h1>
 
-    <p id="text-contact">You can find me on <a href="https://github.com/didemertens"id="link-personal" target="_blank">Github</a> and
-      <a href="https://www.linkedin.com/in/didemertens/" id="link-personal" target="_blank">LinkedIn</a>. Or send me an email with the form below and I will get back to you as soon as possible.</p>
+    <p id="text-contact">You can find me on <a href="https://github.com/didemertens"id="link-personal" >Github</a> and
+      <a href="https://www.linkedin.com/in/didemertens/" id="link-personal" >LinkedIn</a>. Or send me an email with the form below and I will get back to you as soon as possible.</p>
 
     <div id="contact-form">
       {% render_partial 'basic_app.views.emailView' %}
@@ -117,7 +119,10 @@
 {# border #}
 
 <div id="border-bottom">
-  <h4>end</h4>
+  <div id="icon-personal">
+    <a href="https://github.com/didemertens"><i id="personal-icon" class="fab fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/in/didemertens/"><i id="personal-icon" class="fab fa-linkedin"></i></a>
+  </div>
 </div>
 
 {# javascript #}

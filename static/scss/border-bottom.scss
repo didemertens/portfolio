@@ -1,5 +1,23 @@
 #border-bottom{
-  height: 3vw;
+  height: 3.5vw;
   margin-bottom: 0;
   background: $border-blue;
+}
+
+#icon-personal{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 95vw;
+}
+
+#personal-icon{
+  text-decoration: none;
+  font-size: 20pt;
+  color: $dark-blue;
+  line-height: 1.9 !important;
+  &:hover{
+    text-decoration: none;
+    color: $white-back;
+  }
 }
