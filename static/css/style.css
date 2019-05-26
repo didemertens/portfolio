@@ -25,8 +25,8 @@ html {
 }
 html #welcome-heading {
   background-color: #1F1F31;
-  height: 55vh;
-  width: 100vw;
+  height: 400px;
+  width: 100%;
   margin-top: -2.5vw;
 }
 html #title-heading {
@@ -44,8 +44,8 @@ html #subtitle-heading {
   font-family: "Noto Sans TC", sans-serif;
 }
 html #menu-total {
-  width: 27vw;
-  height: 27vw;
+  width: 390px;
+  height: 390px;
   border: 15px solid #1F1F31;
   border-radius: 50%;
   display: block;
@@ -56,20 +56,20 @@ html #menu-total {
   position: relative;
 }
 html #arrow-down {
-  width: 5vw;
-  margin-top: 38vh;
-  margin-left: 49vw;
+  width: 100%;
+  margin-top: 18vw;
+  text-align: center;
   font-size: 35pt;
   color: #1F1F31;
   cursor: pointer;
 }
 html #arrow-down:hover {
-  margin-top: 40vh;
+  margin-top: 19vw;
 }
 html #laptop_image {
   border-radius: 50%;
-  width: 25vw;
-  height: 25vw;
+  width: 360px;
+  height: 360px;
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);
@@ -445,19 +445,23 @@ label {
 input {
   width: 25vw;
   height: 2vw;
-  border: 2px solid #808A9F;
+  border: 2.5px solid #808A9F;
+  border-radius: 5px;
 }
 input:focus {
   background-color: #FCFCFC;
+  border: 2.5px solid #1F1F31;
 }
 
 textarea {
   width: 25vw;
   height: 10vw;
-  border: 2px solid #808A9F;
+  border: 2.5px solid #808A9F;
+  border-radius: 5px;
 }
 textarea:focus {
   background-color: #FCFCFC;
+  border: 2.5px solid #1F1F31;
 }
 
 #btn-contact {

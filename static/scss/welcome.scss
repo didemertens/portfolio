@@ -3,8 +3,8 @@ html {
 
 #welcome-heading{
   background-color: $dark-blue;
-  height: 55vh;
-  width: 100vw;
+  height: 400px;
+  width: 100%;
   margin-top: -2.5vw;
 }
 
@@ -25,8 +25,8 @@ html {
 }
 
 #menu-total{
-  width: 27vw;
-  height: 27vw;
+  width: 390px;
+  height: 390px;
   border: 15px solid $dark-blue;
   border-radius: 50%;
   display: block;
@@ -38,21 +38,21 @@ html {
 }
 
 #arrow-down{
-  width: 5vw;
-  margin-top: 38vh;
-  margin-left: 49vw;
+  width: 100%;
+  margin-top: 18vw;
+  text-align: center;
   font-size: 35pt;
   color: $dark-blue;
   cursor: pointer;
   &:hover{
-    margin-top: 40vh;
+    margin-top: 19vw;
   }
 }
 
 #laptop_image{
   border-radius: 50%;
-  width: 25vw;
-  height: 25vw;
+  width: 360px;
+  height: 360px;
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);

@@ -52,18 +52,22 @@ label{
 input{
   width: 25vw;
   height: 2vw;
-  border: 2px solid $border-blue;
+  border: 2.5px solid $border-blue;
+  border-radius: 5px;
   &:focus{
     background-color: $white-form;
+    border: 2.5px solid $dark-blue;
   }
 }
 
 textarea{
   width: 25vw;
   height: 10vw;
-  border: 2px solid $border-blue;
+  border: 2.5px solid $border-blue;
+  border-radius: 5px;
   &:focus{
     background-color: $white-form;
+    border: 2.5px solid $dark-blue;
   }
 }
 
