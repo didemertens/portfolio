@@ -57,7 +57,7 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 367px;
+  margin-top: 368px;
   opacity: 0;
   visibility: hidden;
   transition: 1.1s ease-in-out;
@@ -108,6 +108,10 @@
     top: 50%;
     margin-top: -3vw;
   }
+}
+
+#work-progress{
+  visibility: hidden;
 }
 
 .link-slide{
