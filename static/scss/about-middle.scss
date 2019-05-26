@@ -1,7 +1,7 @@
 #about{
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 6vw 20vw 8vw;
+  margin: 6vw 20vw 4vw;
 }
 
 #about-middle{
@@ -24,21 +24,23 @@
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-@media (max-width: 700px) {
+// media qr for text
+
+@media (max-width: 600px) {
   .text-first-middle{
     margin: 2vw 4vw;
-    font-size: 15pt;
+    font-size: 12pt;
   }
   .text-middle{
     margin: 2vw 4vw;
-    font-size: 15pt;
+    font-size: 12pt;
   }
   #about{
     margin: 11.5vw 10vw 8vw;
   }
 }
 
-@media (min-width: 701px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width: 1200px) {
   .text-first-middle{
     margin: 2vw 7vw;
   }
@@ -49,6 +51,8 @@
     margin: 6vw 17vw 8vw;
   }
 }
+
+// end media qr
 
 #contact-about{
   border-radius: 5px;
@@ -81,7 +85,7 @@
 
 #skill-list{
   margin-left: -20px;
-  margin-top: 15vw;
+  margin-top: 12vw;
   display: flex;
   justify-content: space-between;
 }
@@ -97,6 +101,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+// media qr for skills
 
 @media (max-width: 700px) {
   #skill-icon{

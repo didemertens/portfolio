@@ -6,7 +6,6 @@
 
 #contact-bottom{
   background-color: #F7F7F7;
-  height: 43vw;
   padding: 20px;
 }
 
@@ -15,6 +14,7 @@
   font-family: 'Bitter', serif;
   text-align: center;
   border-bottom: 8px solid $border-blue;
+  margin-bottom: 5vw;
 }
 
 
@@ -22,6 +22,25 @@
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 13pt;
   margin: 4vw 13vw;
+}
+
+@media (max-width: 600px) {
+  #text-contact{
+    margin: 2vw 4vw;
+    font-size: 12pt;
+}
+  #contact{
+    margin: 2vw 10vw 2vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  #text-contact{
+    margin: 2vw 7vw;
+  }
+  #contact{
+    margin: 2vw 17vw 2vw;
+  }
 }
 
 #link-personal{
@@ -50,8 +69,8 @@ label{
 }
 
 input{
-  width: 25vw;
-  height: 2vw;
+  width: 250px;
+  height: 30px;
   border: 2.5px solid $border-blue;
   border-radius: 5px;
   &:focus{
@@ -61,8 +80,8 @@ input{
 }
 
 textarea{
-  width: 25vw;
-  height: 10vw;
+  width: 350px;
+  height: 150px;
   border: 2.5px solid $border-blue;
   border-radius: 5px;
   &:focus{
@@ -81,5 +100,28 @@ textarea{
     &:hover{
     background-color: $dark-blue;
     color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-form{
+    margin-left: 4vw;
+  }
+  input{
+    width: 220px;
+  }
+  textarea{
+    width: 220px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #contact-form{
+    margin-left: 14vw;
+  }
+  textarea{
+    width: 250px;
+    height: 200px
   }
 }

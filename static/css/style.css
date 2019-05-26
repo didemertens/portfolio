@@ -269,7 +269,7 @@ html #menu-contact:hover {
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  margin: 6vw 20vw 8vw;
+  margin: 6vw 20vw 4vw;
 }
 
 #about-middle {
@@ -292,22 +292,22 @@ html #menu-contact:hover {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .text-first-middle {
     margin: 2vw 4vw;
-    font-size: 15pt;
+    font-size: 12pt;
   }
 
   .text-middle {
     margin: 2vw 4vw;
-    font-size: 15pt;
+    font-size: 12pt;
   }
 
   #about {
     margin: 11.5vw 10vw 8vw;
   }
 }
-@media (min-width: 701px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width: 1200px) {
   .text-first-middle {
     margin: 2vw 7vw;
   }
@@ -350,7 +350,7 @@ html #menu-contact:hover {
 
 #skill-list {
   margin-left: -20px;
-  margin-top: 15vw;
+  margin-top: 12vw;
   display: flex;
   justify-content: space-between;
 }
@@ -419,7 +419,6 @@ html #menu-contact:hover {
 
 #projects-middle {
   background-color: #B2B1BC;
-  height: 39vw;
   padding: 20px;
   position: relative;
   z-index: 0;
@@ -446,8 +445,8 @@ html #menu-contact:hover {
 }
 
 .img-slide {
-  height: 33vw;
-  width: 48vw;
+  height: 500px;
+  width: 600px;
   position: relative;
   z-index: -1;
   opacity: 1;
@@ -472,13 +471,61 @@ html #menu-contact:hover {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 24vw;
+  margin-top: 367px;
   opacity: 0;
   visibility: hidden;
   transition: 1.1s ease-in-out;
   font-family: "Noto Sans TC", sans-serif;
 }
 
+@media (max-width: 399px) {
+  .img-slide {
+    height: 150px;
+    width: 200px;
+  }
+
+  .slideshow-text {
+    margin-top: 17px;
+  }
+
+  .prev, .next {
+    top: 25%;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .img-slide {
+    height: 250px;
+    width: 300px;
+  }
+
+  .slideshow-text {
+    margin-top: 117px;
+  }
+
+  .prev, .next {
+    top: 33%;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .img-slide {
+    height: 370px;
+    width: 400px;
+  }
+
+  .slideshow-text {
+    margin-top: 237px;
+  }
+
+  .prev, .next {
+    top: 39%;
+  }
+}
+@media (min-width: 900px) {
+  .prev, .next {
+    top: 50%;
+    margin-top: -3vw;
+  }
+}
 .link-slide {
   border-radius: 5px;
   text-decoration: none;
@@ -505,9 +552,7 @@ html #menu-contact:hover {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -577,7 +622,6 @@ html #menu-contact:hover {
 
 #contact-bottom {
   background-color: #F7F7F7;
-  height: 43vw;
   padding: 20px;
 }
 
@@ -586,6 +630,7 @@ html #menu-contact:hover {
   font-family: "Bitter", serif;
   text-align: center;
   border-bottom: 8px solid #808A9F;
+  margin-bottom: 5vw;
 }
 
 #text-contact {
@@ -594,6 +639,25 @@ html #menu-contact:hover {
   margin: 4vw 13vw;
 }
 
+@media (max-width: 600px) {
+  #text-contact {
+    margin: 2vw 4vw;
+    font-size: 12pt;
+  }
+
+  #contact {
+    margin: 2vw 10vw 2vw;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  #text-contact {
+    margin: 2vw 7vw;
+  }
+
+  #contact {
+    margin: 2vw 17vw 2vw;
+  }
+}
 #link-personal {
   border-radius: 5px;
   color: #1F1F31;
@@ -620,8 +684,8 @@ label {
 }
 
 input {
-  width: 25vw;
-  height: 2vw;
+  width: 250px;
+  height: 30px;
   border: 2.5px solid #808A9F;
   border-radius: 5px;
 }
@@ -631,8 +695,8 @@ input:focus {
 }
 
 textarea {
-  width: 25vw;
-  height: 10vw;
+  width: 350px;
+  height: 150px;
   border: 2.5px solid #808A9F;
   border-radius: 5px;
 }
@@ -654,8 +718,32 @@ textarea:focus {
   color: white;
 }
 
+@media (max-width: 600px) {
+  #contact-form {
+    margin-left: 4vw;
+  }
+
+  input {
+    width: 220px;
+  }
+
+  textarea {
+    width: 220px;
+    height: 200px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  #contact-form {
+    margin-left: 14vw;
+  }
+
+  textarea {
+    width: 250px;
+    height: 200px;
+  }
+}
 #border-bottom {
-  height: 3.5vw;
+  height: 50px;
   margin-bottom: 0;
   background: #808A9F;
 }
@@ -668,10 +756,11 @@ textarea:focus {
 }
 
 #personal-icon {
+  margin-top: 5px;
+  padding: 5px;
   text-decoration: none;
   font-size: 20pt;
   color: #1F1F31;
-  line-height: 1.9 !important;
 }
 #personal-icon:hover {
   text-decoration: none;
