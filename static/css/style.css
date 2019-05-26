@@ -183,7 +183,7 @@ html #menu-contact:hover {
 #about-middle {
   border-top: 8px solid #808A9F;
   background-color: #F7F7F7;
-  height: 23vw;
+  height: 30vw;
   padding: 20px;
 }
 
@@ -195,7 +195,7 @@ html #menu-contact:hover {
 
 .text-middle {
   font-size: 13pt;
-  margin-top: -4vw;
+  margin-top: -2vw;
   margin-left: 13vw;
   margin-right: 13vw;
   font-family: "Noto Sans TC", sans-serif;
@@ -220,13 +220,13 @@ html #menu-contact:hover {
 }
 
 #skill-icon {
-  font-size: 30pt;
+  font-size: 38pt;
   color: #454545;
 }
 
 #django-logo {
   margin-top: -1.5vw;
-  height: 5vw;
+  height: 7vw;
 }
 
 #skill-list {
