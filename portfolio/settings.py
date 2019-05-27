@@ -132,9 +132,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #email form
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 
+# old
 # EMAIL_HOST = 'smtp.sendgrid.net'
 # EMAIL_HOST_USER = 'apikey'
 # EMAIL_HOST_PASSWORD = os.path.join('secret_settings')
