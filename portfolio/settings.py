@@ -132,3 +132,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #email form
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_HOST_USER = 'diedjuh12'
+# EMAIL_HOST_PASSWORD = os.path.join('secret_settings')
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
