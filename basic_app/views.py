@@ -19,7 +19,9 @@ def emailView(request):
             from_email = request.POST['from_email']
             message = request.POST['message']
             try:
-                send_mail(name, message, from_email, ['dideveldhuijzen@hotmail.com'])
+                send_mail(name, message, from_email, ['d.g.j.mertens@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
     return render(request, "email.html", {'form': form})
+
+
