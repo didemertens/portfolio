@@ -11,6 +11,7 @@ gunicorn = "==19.9.0"
 whitenoise = "*"
 django_render-partial = "*"
 django-sendgrid-v5 = "*"
+ajax = "*"
 sendgrid = "*"
 
 [requires]
