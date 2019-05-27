@@ -295,12 +295,12 @@ html #menu-contact:hover {
 @media (max-width: 600px) {
   .text-first-middle {
     margin: 2vw 4vw;
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   .text-middle {
     margin: 2vw 4vw;
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   #about {
@@ -640,13 +640,13 @@ html #menu-contact:hover {
 #text-contact {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 13pt;
-  margin: 4vw 13vw;
+  margin: 4vw 13vw 1vw 13vw;
 }
 
 @media (max-width: 600px) {
   #text-contact {
-    margin: 2vw 4vw;
-    font-size: 12pt;
+    margin: 2vw 4vw 6vw;
+    font-size: 14pt;
   }
 
   #contact {

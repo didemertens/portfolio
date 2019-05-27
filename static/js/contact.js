@@ -11,7 +11,7 @@ $(document).on('submit','#contact-bottom-form',function(e){
       csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
     },
     success:function(){
-      alert('Thank you for your message.');
+      alert("Thank you for your message! I'll get back to you as soon as possible.");
     }
   });
   $("#contact-bottom-form")[0].reset();
