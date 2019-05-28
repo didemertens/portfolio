@@ -378,15 +378,16 @@ html #menu-contact:hover {
 
   #row-one-icons {
     text-align: center;
-    margin-left: 25vw;
+    margin-left: auto;
     margin-right: auto;
   }
 
   #row-two-icons {
     margin-top: 0vw;
-    margin-left: 17vw;
+    margin-left: auto;
     margin-right: auto;
     width: 32vw;
+    display: block;
     display: flex;
     justify-content: space-between;
   }
@@ -396,7 +397,7 @@ html #menu-contact:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
-    margin-left: 17vw;
+    margin-left: auto;
     margin-right: auto;
   }
 
