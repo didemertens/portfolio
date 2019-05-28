@@ -307,7 +307,7 @@ html #menu-contact:hover {
     margin: 11.5vw 10vw 8vw;
   }
 }
-@media (min-width: 1px) and (max-width: 1200px) {
+@media (min-width: 701px) and (max-width: 1200px) {
   .text-first-middle {
     margin: 2vw 7vw;
   }
