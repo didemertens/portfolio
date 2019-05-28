@@ -295,12 +295,12 @@ html #menu-contact:hover {
 @media (max-width: 700px) {
   .text-first-middle {
     margin: 2vw 4vw;
-    font-size: 1.4rem;
+    font-size: 1.2em;
   }
 
   .text-middle {
     margin: 2vw 4vw;
-    font-size: 1.4rem;
+    font-size: 1.2em;
   }
 
   #about {
@@ -378,11 +378,13 @@ html #menu-contact:hover {
 
   #row-one-icons {
     text-align: center;
+    margin-left: 25vw;
+    margin-right: auto;
   }
 
   #row-two-icons {
     margin-top: 0vw;
-    margin-left: auto;
+    margin-left: 17vw;
     margin-right: auto;
     width: 32vw;
     display: flex;
@@ -394,7 +396,7 @@ html #menu-contact:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
-    margin-left: auto;
+    margin-left: 17vw;
     margin-right: auto;
   }
 
@@ -643,20 +645,20 @@ html #menu-contact:hover {
   margin: 4vw 13vw 1vw 13vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   #text-contact {
-    margin: 2vw 15vw 6vw;
-    font-size: 1.4rem;
+    margin: 2vw 5vw 6vw;
+    font-size: 1.2em;
   }
 
   #contact {
     margin: 2vw 10vw 2vw;
   }
 }
-@media (min-width: 651px) and (max-width: 1200px) {
+@media (min-width: 751px) and (max-width: 1200px) {
   #text-contact {
     margin: 2vw 7vw;
-    font-size: 1.4rem;
+    font-size: 1.2em;
   }
 
   #contact {
@@ -723,9 +725,9 @@ textarea:focus {
   color: white;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   #contact-form {
-    margin-left: 4vw;
+    margin-left: 5vw;
   }
 
   input {
@@ -737,7 +739,7 @@ textarea:focus {
     height: 200px;
   }
 }
-@media (min-width: 651px) and (max-width: 1100px) {
+@media (min-width: 751px) and (max-width: 1100px) {
   #contact-form {
     margin-left: 15vw;
   }

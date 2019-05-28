@@ -29,11 +29,11 @@
 @media (max-width: 700px) {
   .text-first-middle{
     margin: 2vw 4vw;
-    font-size: 1.4rem;
+    font-size: 1.2em;
   }
   .text-middle{
     margin: 2vw 4vw;
-    font-size: 1.4rem;
+    font-size: 1.2em;
   }
   #about{
     margin: 11.5vw 10vw 8vw;
@@ -113,10 +113,12 @@
   }
   #row-one-icons{
     text-align: center;
+    margin-left: 25vw;
+    margin-right: auto;
   }
   #row-two-icons{
     margin-top: 0vw;
-    margin-left: auto;
+    margin-left: 17vw;
     margin-right: auto;
     width: 32vw;
     display: flex;
@@ -127,7 +129,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 3vw;
-    margin-left: auto;
+    margin-left: 17vw;
     margin-right: auto;
   }
   #skill-list{
