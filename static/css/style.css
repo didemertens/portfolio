@@ -121,7 +121,7 @@ html .menu-item {
     top: 50%;
     left: 50%;
     z-index: 0;
-    display: none;
+    visibility: hidden;
   }
   100% {
     transform: rotate(-45deg);
@@ -139,7 +139,7 @@ html .menu-item {
     top: 50%;
     left: 50%;
     z-index: 0;
-    display: none;
+    visibility: hidden;
   }
   100% {
     transform: rotate(-45deg);
@@ -166,7 +166,7 @@ html #menu-projects:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    display: none;
+    visibility: hidden;
   }
   100% {
     top: 1vw;
@@ -192,7 +192,7 @@ html #menu-about:hover {
     top: 50%;
     left: 50%;
     z-index: 0;
-    display: none;
+    visibility: hidden;
   }
   100% {
     transform: rotate(45deg);
@@ -211,7 +211,7 @@ html #menu-about:hover {
     top: 50%;
     left: 50%;
     z-index: 0;
-    display: none;
+    visibility: hidden;
   }
   100% {
     transform: rotate(45deg);
