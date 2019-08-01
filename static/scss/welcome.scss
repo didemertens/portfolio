@@ -90,6 +90,11 @@ html {
 
 // menu animation
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
 
 .menu-item{
   padding: 0;

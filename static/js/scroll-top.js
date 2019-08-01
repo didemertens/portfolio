@@ -1,3 +1,12 @@
+// Load img and then animation
+
+const img = document.querySelector("#laptop-image");
+document.body.classList.add('js-loading');
+img.addEventListener("load", removeLoadingClass);
+function removeLoadingClass() {
+  document.body.classList.remove('js-loading');
+}
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
