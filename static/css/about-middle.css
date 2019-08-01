@@ -1,17 +1,174 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |   border-top: 8px solid $border-blue;
- *   |                         ^^^^^^^^^^^^
- *   '
- *   static/scss/about-middle.scss 8:25  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502    border-top: 8px solid $border-blue;\a   \2502                          ^^^^^^^^^^^^\a   \2575 \a   static/scss/about-middle.scss 8:25  root stylesheet";
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
+#about {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+  margin: 6vw 20vw 4vw;
+}
+
+#about-middle {
+  border-top: 8px solid #808A9F;
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+
+.text-first-middle {
+  font-size: 13pt;
+  margin: 4vw 13vw;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.text-middle {
+  font-size: 13pt;
+  margin-top: -2vw;
+  margin-left: 13vw;
+  margin-right: 13vw;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .text-first-middle {
+    margin: 2vw 4vw;
+    font-size: 1.2em;
+  }
+
+  .text-middle {
+    margin: 2vw 4vw;
+    font-size: 1.2em;
+  }
+
+  #about {
+    margin: 11.5vw 10vw 8vw;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .text-first-middle {
+    margin: 2vw 7vw;
+  }
+
+  .text-middle {
+    margin: 2vw 7vw;
+  }
+
+  #about {
+    margin: 6vw 17vw 8vw;
+  }
+}
+#contact-about {
+  border-radius: 5px;
+  color: #1F1F31;
+  background-color: #B2B1BC;
+  cursor: pointer;
+  padding: 2.5px;
+}
+#contact-about:hover {
+  background-color: #1F1F31;
+  color: white;
+}
+
+#about-title {
+  color: #1F1F31;
+  font-family: "Bitter", serif;
+  text-align: center;
+}
+
+#skill-icon {
+  font-size: 38pt;
+  color: #454545;
+}
+
+#django-logo {
+  margin-top: -1.5vw;
+  height: 100px;
+}
+
+#skill-list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#row-two-icons {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#row-three-icons {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  #skill-icon {
+    font-size: 30pt;
+  }
+
+  #django-logo {
+    height: 90px;
+  }
+
+  #row-one-icons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #row-two-icons {
+    margin-top: 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #row-three-icons {
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skill-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  #skill-icon {
+    font-size: 30pt;
+  }
+
+  #django-logo {
+    height: 80px;
+  }
+}
+
+/*# sourceMappingURL=about-middle.css.map */

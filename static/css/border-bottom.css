@@ -1,17 +1,49 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |   background: $border-blue;
- *   |               ^^^^^^^^^^^^
- *   '
- *   static/scss/border-bottom.scss 4:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    background: $border-blue;\a   \2502                ^^^^^^^^^^^^\a   \2575 \a   static/scss/border-bottom.scss 4:15  root stylesheet";
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
+#border-bottom {
+  height: 50px;
+  margin-bottom: 0;
+  background: #808A9F;
+}
+
+#icon-personal {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 95vw;
+}
+
+#personal-icon {
+  margin-top: 5px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20pt;
+  color: #1F1F31;
+}
+#personal-icon:hover {
+  text-decoration: none;
+  color: #F7F7F7;
+}
+
+/*# sourceMappingURL=border-bottom.css.map */

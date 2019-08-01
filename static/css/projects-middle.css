@@ -1,17 +1,231 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |   background-color: $grey-button;
- *   |                     ^^^^^^^^^^^^
- *   '
- *   static/scss/projects-middle.scss 7:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502    background-color: $grey-button;\a   \2502                      ^^^^^^^^^^^^\a   \2575 \a   static/scss/projects-middle.scss 7:21  root stylesheet";
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
+#projects {
+  padding-top: 0.2vw;
+  padding-bottom: 2.5vw;
+}
+
+#projects-middle {
+  background-color: #B2B1BC;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+#projects-title {
+  margin: 2vw 15vw;
+  color: #1F1F31;
+  font-family: "Bitter", serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-bottom: none;
+}
+
+.img-slide {
+  height: 500px;
+  width: 600px;
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 1.1s ease-in-out;
+}
+
+.pic-transition:hover .slideshow-text {
+  visibility: visible;
+  opacity: 1;
+  color: #F7F7F7;
+  background-color: #808A9F;
+}
+
+.pic-transition:hover .img-slide {
+  opacity: 0.2;
+}
+
+/* Caption text */
+.slideshow-text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 368px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.1s ease-in-out;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+@media (max-width: 399px) {
+  .img-slide {
+    height: 150px;
+    width: 200px;
+  }
+
+  .slideshow-text {
+    margin-top: 17px;
+  }
+
+  .prev, .next {
+    top: 25%;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .img-slide {
+    height: 250px;
+    width: 300px;
+  }
+
+  .slideshow-text {
+    margin-top: 117px;
+  }
+
+  .prev, .next {
+    top: 33%;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .img-slide {
+    height: 370px;
+    width: 400px;
+  }
+
+  .slideshow-text {
+    margin-top: 237px;
+  }
+
+  .prev, .next {
+    top: 39%;
+  }
+}
+@media (min-width: 900px) {
+  .prev, .next {
+    top: 50%;
+    margin-top: -3vw;
+  }
+}
+#work-progress {
+  visibility: hidden;
+}
+
+.link-slide {
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 35pt;
+  padding: 0.5vw;
+  color: #F7F7F7;
+  font-family: "Bitter", serif;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 12pt;
+  background-color: #1F1F31;
+}
+.link-slide:hover {
+  text-decoration: none;
+  color: #F7F7F7;
+  background-color: #B2B1BC;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #808A9F;
+  transition: 1s ease-in-out;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #1F1F31;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease-in-out;
+}
+
+.active, .dot:hover {
+  background-color: #F7F7F7;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=projects-middle.css.map */

@@ -1,17 +1,154 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |   color: $dark-blue;
- *    |          ^^^^^^^^^^
- *    '
- *   static/scss/contact-bottom.scss 13:10  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502    color: $dark-blue;\a    \2502           ^^^^^^^^^^\a    \2575 \a   static/scss/contact-bottom.scss 13:10  root stylesheet";
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
+#contact {
+  padding-top: 1vw;
+  padding-bottom: 2.5vw;
+  margin: 2vw 20vw 2.5vw;
+}
+
+#contact-bottom {
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+
+#title-contact {
+  color: #1F1F31;
+  font-family: "Bitter", serif;
+  text-align: center;
+  border-bottom: 8px solid #808A9F;
+  margin-bottom: 5vw;
+}
+
+#text-contact {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 13pt;
+  margin: 4vw 13vw 1vw 13vw;
+}
+
+@media (max-width: 750px) {
+  #text-contact {
+    margin: 2vw 5vw 6vw;
+    font-size: 1.2em;
+  }
+
+  #contact {
+    margin: 2vw 10vw 2vw;
+  }
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  #text-contact {
+    margin: 2vw 7vw;
+    font-size: 1.2em;
+  }
+
+  #contact {
+    margin: 6vw 18vw 2vw;
+  }
+}
+#link-personal {
+  border-radius: 5px;
+  color: #1F1F31;
+  background-color: #B2B1BC;
+  cursor: pointer;
+  padding: 2.5px;
+  text-decoration: none;
+}
+#link-personal:hover {
+  background-color: #1F1F31;
+  color: white;
+  text-decoration: none;
+}
+
+#contact-form {
+  margin-top: 2vw;
+  margin-left: 13vw;
+}
+
+label {
+  font-family: "Noto Sans TC", sans-serif;
+  font-style: lighter;
+  display: block;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  border: 2.5px solid #808A9F;
+  border-radius: 5px;
+}
+input:focus {
+  background-color: #FCFCFC;
+  border: 2.5px solid #1F1F31;
+}
+
+textarea {
+  width: 350px;
+  height: 150px;
+  border: 2.5px solid #808A9F;
+  border-radius: 5px;
+}
+textarea:focus {
+  background-color: #FCFCFC;
+  border: 2.5px solid #1F1F31;
+}
+
+#btn-contact {
+  border-radius: 5px;
+  color: #1F1F31;
+  background-color: #B2B1BC;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 13pt;
+}
+#btn-contact:hover {
+  background-color: #1F1F31;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  #contact-form {
+    margin-left: 5vw;
+  }
+
+  input {
+    width: 220px;
+  }
+
+  textarea {
+    width: 220px;
+    height: 200px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1100px) {
+  #contact-form {
+    margin-left: 7vw;
+  }
+
+  textarea {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=contact-bottom.css.map */

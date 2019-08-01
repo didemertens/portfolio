@@ -307,6 +307,29 @@ html #menu-contact:hover {
   animation-play-state: paused !important;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
+}
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
@@ -456,6 +479,29 @@ html #menu-contact:hover {
     height: 80px;
   }
 }
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
+}
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 #projects {
   padding-top: 0.2vw;
   padding-bottom: 2.5vw;
@@ -662,6 +708,29 @@ html #menu-contact:hover {
     opacity: 1;
   }
 }
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
+}
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 #contact {
   padding-top: 1vw;
   padding-bottom: 2.5vw;
@@ -791,6 +860,29 @@ textarea:focus {
     height: 200px;
   }
 }
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
+}
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
 #border-bottom {
   height: 50px;
   margin-bottom: 0;
