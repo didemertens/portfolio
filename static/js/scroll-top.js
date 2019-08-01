@@ -1,12 +1,12 @@
 // Load img and then animation
 
-document.documentElement.className += " js-loading";
+const img = document.querySelector("#laptop-image");
+document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage);
-
-function showPage() {
-    document.documentElement.className = document.documentElement.className.replace("js-loading","");
-  };
+window.onload = (event) => {
+  console.log('load');
+  document.body.classList.remove('js-loading');
+};
 
 
 // When the user scrolls down 20px from the top of the document, show the button
