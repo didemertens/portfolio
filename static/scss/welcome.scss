@@ -2,13 +2,15 @@ html {
   scroll-behavior: smooth;
 
 // Make animation wait
-.js-still-loading *,
-.js-still-loading *:before,
-.js-still-loading *:after {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
+body{
+  &.js-still-loading *,
+  .js-still-loading *:before,
+  .js-still-loading *:after {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+  }
 }
 
 #welcome-header{
