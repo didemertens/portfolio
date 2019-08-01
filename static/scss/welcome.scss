@@ -66,13 +66,14 @@ html {
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);
-  background-color: white;
+  background-color: $dark-blue;
 }
 
 @media (max-width: 650px) {
   #laptop-image{
     height: 200px;
     width: 200px;
+    background-color: $dark-blue;
   }
   #menu-total{
     width: 230px;
@@ -88,6 +89,7 @@ html {
   #laptop-image{
     height: 300px;
     width: 300px;
+    background-color: $dark-blue;
   }
   #menu-total{
     width: 330px;
