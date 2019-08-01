@@ -1,14 +1,12 @@
 // Load img and then animation
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  document.body.classList.add('js-loading');
+document.body.classList.add('js-loading');
 
-  window.addEventListener("load", showPage);
+window.addEventListener("load", showPage);
 
-  function showPage() {
-    document.body.classList.remove('js-loading');
-  }
-});
+function showPage() {
+  document.body.classList.remove('js-loading');
+};
 
 
 // document.body.classList.add('js-still-loading');
