@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 
 // Make animation wait
-body{
+body {
   &.js-still-loading *,
   .js-still-loading *:before,
   .js-still-loading *:after {
