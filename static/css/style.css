@@ -76,11 +76,13 @@ html #laptop-image {
   position: absolute;
   z-index: 1;
   transform: rotate(2deg);
+  background-color: #1F1F31;
 }
 @media (max-width: 650px) {
   html #laptop-image {
     height: 200px;
     width: 200px;
+    background-color: #1F1F31;
   }
   html #menu-total {
     width: 230px;
@@ -95,6 +97,7 @@ html #laptop-image {
   html #laptop-image {
     height: 300px;
     width: 300px;
+    background-color: #1F1F31;
   }
   html #menu-total {
     width: 330px;
@@ -272,6 +275,15 @@ html #menu-contact:hover {
     left: -0.5vw;
   }
 }
+.js-still-loading *,
+.js-still-loading *:before,
+.js-still-loading *:after {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
 #about {
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
