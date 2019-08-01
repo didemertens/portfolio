@@ -1,17 +1,287 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |   background-color: $dark-blue;
- *   |                     ^^^^^^^^^^
- *   '
- *   static/scss/welcome.scss 9:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502    background-color: $dark-blue;\a   \2502                      ^^^^^^^^^^\a   \2575 \a   static/scss/welcome.scss 9:21  root stylesheet";
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
 }
+
+#myBtn {
+  font-size: 20pt;
+  color: #1F1F31;
+  position: fixed;
+  bottom: 8px;
+  right: 35px;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#myBtn:hover {
+  bottom: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html #welcome-header {
+  height: 550px;
+}
+html #welcome-heading {
+  background-color: #1F1F31;
+  height: 400px;
+  width: 100%;
+  margin-top: -20px;
+}
+html #title-heading {
+  padding: 2vw;
+  font-size: 40pt;
+  color: #F7F7F7;
+  font-family: "Bitter", serif;
+}
+html #subtitle-heading {
+  margin-top: -4.5vw;
+  padding: 2vw;
+  font-size: 18pt;
+  color: #F7F7F7;
+  font-family: "Noto Sans TC", sans-serif;
+}
+html #menu-total {
+  width: 390px;
+  height: 390px;
+  border: 15px solid #1F1F31;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vw;
+  margin-bottom: -14vw;
+  position: relative;
+}
+html #arrow-down {
+  width: 100%;
+  margin-top: 5vw;
+  text-align: center;
+  font-size: 35pt;
+  color: #1F1F31;
+  cursor: pointer;
+}
+html #arrow-down:hover {
+  margin-top: 6vw;
+}
+html #laptop-image {
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(2deg);
+  background-color: #1F1F31;
+}
+@media (max-width: 650px) {
+  html #laptop-image {
+    height: 200px;
+    width: 200px;
+    background-color: #1F1F31;
+  }
+  html #menu-total {
+    width: 230px;
+    height: 230px;
+    margin-top: 165px;
+  }
+  html #title-heading {
+    font-size: 33pt;
+  }
+}
+@media (min-width: 651px) and (max-width: 1200px) {
+  html #laptop-image {
+    height: 300px;
+    width: 300px;
+    background-color: #1F1F31;
+  }
+  html #menu-total {
+    width: 330px;
+    height: 330px;
+    margin-top: 57px;
+  }
+}
+html .menu-item {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 12pt;
+  color: #F7F7F7;
+  cursor: pointer;
+}
+@keyframes showProjectsBig {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 1.5vw;
+    left: 0;
+    z-index: 0;
+  }
+}
+@keyframes showProjectsSmall {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: -1vw;
+    left: -7vw;
+    z-index: 0;
+  }
+}
+html #menu-projects {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  z-index: 2;
+  padding: 7px;
+}
+html #menu-projects:hover {
+  border-radius: 5px;
+  background-color: #93929B;
+}
+@keyframes showAbout {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+  }
+  100% {
+    top: 1vw;
+    transform: translate(-50%, -150%);
+  }
+}
+html #menu-about {
+  animation: 1s showAbout;
+  top: 1vw;
+  transform: translate(-50%, -150%);
+  padding: 7px;
+}
+html #menu-about:hover {
+  top: 0.7vw;
+  border-radius: 5px;
+  background-color: #93929B;
+}
+@keyframes showContactBig {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 1.5vw;
+    right: 0;
+    left: auto;
+    z-index: 0;
+  }
+}
+@keyframes showContactSmall {
+  0% {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: -1vw;
+    right: -7vw;
+    left: auto;
+    z-index: 0;
+  }
+}
+html #menu-contact {
+  transform: rotate(45deg);
+  transform-origin: center;
+  left: auto;
+  z-index: 2;
+  padding: 7px;
+}
+html #menu-contact:hover {
+  border-radius: 5px;
+  background-color: #93929B;
+}
+
+@media (max-width: 650px) {
+  #menu-contact {
+    animation: 1s showContactSmall;
+    right: -7vw;
+    top: -1vw;
+  }
+  #menu-contact:hover {
+    right: -7vw;
+  }
+
+  #menu-projects {
+    animation: 1s showProjectsSmall;
+    top: -1vw;
+    left: -7vw;
+  }
+  #menu-projects:hover {
+    left: -7vw;
+  }
+}
+@media (min-width: 651px) {
+  #menu-contact {
+    animation: 1s showContactBig;
+    top: 1.5vw;
+    right: 0;
+  }
+  #menu-contact:hover {
+    right: -0.5vw;
+  }
+
+  #menu-projects {
+    animation: 1s showProjectsBig;
+    top: 1.5vw;
+    left: 0;
+  }
+  #menu-projects:hover {
+    left: -0.5vw;
+  }
+}
+.js-still-loading *,
+.js-still-loading *:before,
+.js-still-loading *:after {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
+/*# sourceMappingURL=welcome.css.map */
