@@ -5,7 +5,10 @@ html {
 .js-still-loading *,
 .js-still-loading *:before,
 .js-still-loading *:after {
-  animation-play-state: paused !important;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #welcome-header{
