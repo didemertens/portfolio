@@ -3,11 +3,11 @@
 const img = document.querySelector("#laptop-image");
 document.body.classList.add('js-loading');
 
-window.onload = (event) => {
-  console.log('load');
+function removeLoadingClass() {
   document.body.classList.remove('js-loading');
 };
 
+img.addEventListener('load', removeLoadingClass);
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
