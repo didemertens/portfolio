@@ -1,18 +1,6 @@
 html {
   scroll-behavior: smooth;
 
-// Make animation wait
-#menu-total {
-  &.js-still-loading *,
-  .js-still-loading *:before,
-  .js-still-loading *:after {
-      -webkit-animation-play-state: paused !important;
-      -moz-animation-play-state: paused !important;
-      -o-animation-play-state: paused !important;
-      animation-play-state: paused !important;
-  }
-}
-
 #welcome-header{
   height: 550px;
 }
@@ -281,4 +269,14 @@ html {
       left: -0.5vw;
     }
   }
+}
+
+// Make animation wait
+.js-still-loading *,
+.js-still-loading *:before,
+.js-still-loading *:after {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
