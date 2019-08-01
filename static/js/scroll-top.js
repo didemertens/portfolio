@@ -1,19 +1,13 @@
 // Load img and then animation
 
-const img = document.querySelector("#laptop-image");
-document.body.classList.add('js-loading');
 
-if (img.complete && img.naturalHeight !== 0){
-  document.body.classList.remove('js-loading');
-};
-
-// window.addEventListener('load', event => {
-//   document.body.classList.remove('js-loading');
-//   console.log(document.body.classList)
-//   console.log('hey')
-// });
-
-
+// document.body.classList.add('js-still-loading');
+// window.addEventListener("load", loadPage, false);
+    
+// function loadPage() {
+//   console.log('hello')
+//   document.body.classList.remove('js-still-loading');
+//     }
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

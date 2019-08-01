@@ -4,6 +4,15 @@
 
 {% block body %}
 
+<script>
+    document.body.classList.add('js-still-loading');
+    window.addEventListener("load", loadPage, false);
+    
+    function loadPage() {
+      document.body.classList.remove('js-still-loading');
+    }
+</script>
+
 <base target="_blank">
 
 <a onclick="topFunction()" id="myBtn" title="Go to top">

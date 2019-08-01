@@ -2,7 +2,9 @@ html {
   scroll-behavior: smooth;
 
 // Make animation wait
-.js-loading {
+.js-still-loading *,
+.js-still-loading *:before,
+.js-still-loading *:after {
   animation-play-state: paused !important;
 }
 
