@@ -1,26 +1,26 @@
 // Load img and then animation
 
-document.body.classList.add('js-loading');
+// document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage);
+// window.addEventListener("load", showPage);
 
-function showPage() {
-  document.body.classList.remove('js-loading');
-};
-
-
-// document.body.classList.add('js-still-loading');
-
-
-// document.onreadystatechange = function () {
-//   if(document.readyState === "complete"){
-//     loadPage();
-//   }
-// }
-
-// function loadPage() {
-//   document.body.classList.remove('js-still-loading');
+// function showPage() {
+//   document.body.classList.remove('js-loading');
 // };
+
+
+document.body.classList.add('js-still-loading');
+
+
+document.onreadystatechange = function () {
+  if(document.readyState === "complete"){
+    loadMenu();
+  }
+}
+
+function loadMenu() {
+  document.body.classList.remove('js-still-loading');
+};
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
