@@ -105,6 +105,11 @@ html {
   font-size: 12pt;
   color: $white-back;
   cursor: pointer;
+  // wait with animation
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 
 @keyframes showProjectsBig{
@@ -274,9 +279,9 @@ html {
 }
 
 // Make animation wait
-.menu-item.js-still-loading {
-  -webkit-animation-play-state: paused !important;
-  -moz-animation-play-state: paused !important;
-  -o-animation-play-state: paused !important;
-  animation-play-state: paused !important;
+.menu-item.js-load {
+  -webkit-animation-play-state: running !important;
+  -moz-animation-play-state: running !important;
+  -o-animation-play-state: running !important;
+  animation-play-state: running !important;
 }

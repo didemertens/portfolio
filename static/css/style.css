@@ -138,6 +138,10 @@ html .menu-item {
   font-size: 12pt;
   color: #F7F7F7;
   cursor: pointer;
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 @keyframes showProjectsBig {
   0% {
@@ -298,11 +302,11 @@ html #menu-contact:hover {
     left: -0.5vw;
   }
 }
-.menu-item.js-still-loading {
-  -webkit-animation-play-state: paused !important;
-  -moz-animation-play-state: paused !important;
-  -o-animation-play-state: paused !important;
-  animation-play-state: paused !important;
+.menu-item.js-load {
+  -webkit-animation-play-state: running !important;
+  -moz-animation-play-state: running !important;
+  -o-animation-play-state: running !important;
+  animation-play-state: running !important;
 }
 
 body {

@@ -8,17 +8,21 @@
 //   document.body.classList.remove('js-loading');
 // };
 
-const menuItems = document.querySelector('.menu-item');
-menuItems.classList.add('js-still-loading');
+const menuItems = document.querySelectorAll('.menu-item');
+console.log(menuItems);
 
 document.onreadystatechange = function () {
   if(document.readyState === "complete"){
-    loadMenu();
+    setTimeout(function() {
+      loadMenu();
+    }, 200);
   }
 }
 
 function loadMenu() {
-  menuItems.classList.remove('js-still-loading');
+  menuItems.forEach( (el) => {
+    el.classList.add('js-load');
+  });
 };
 
 // When the user scrolls down 20px from the top of the document, show the button
