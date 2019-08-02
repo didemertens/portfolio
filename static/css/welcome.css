@@ -275,9 +275,7 @@ html #menu-contact:hover {
     left: -0.5vw;
   }
 }
-.js-still-loading *,
-.js-still-loading *:before,
-.js-still-loading *:after {
+.menu-item.js-still-loading {
   -webkit-animation-play-state: paused !important;
   -moz-animation-play-state: paused !important;
   -o-animation-play-state: paused !important;

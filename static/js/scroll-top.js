@@ -8,9 +8,8 @@
 //   document.body.classList.remove('js-loading');
 // };
 
-
-document.body.classList.add('js-still-loading');
-
+const menuItems = document.querySelector('.menu-item');
+menuItems.classList.add('js-still-loading');
 
 document.onreadystatechange = function () {
   if(document.readyState === "complete"){
@@ -19,7 +18,7 @@ document.onreadystatechange = function () {
 }
 
 function loadMenu() {
-  document.body.classList.remove('js-still-loading');
+  menuItems.classList.remove('js-still-loading');
 };
 
 // When the user scrolls down 20px from the top of the document, show the button
